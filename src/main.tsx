@@ -249,7 +249,7 @@ function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/predictions.json")
+    fetch(`${import.meta.env.BASE_URL}predictions.json`)
       .then((response) => {
         if (!response.ok) throw new Error("预测数据不存在，请先运行 npm run refresh");
         return response.json();
