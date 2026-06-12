@@ -1,0 +1,6377 @@
+{
+  "generatedAt": "2026-06-12T02:47:48.241Z",
+  "model": {
+    "name": "Transparent Elo + form + Poisson model",
+    "comparisonName": "GPT5.5预测",
+    "iterations": 10000,
+    "scoreMaxGoals": 7
+  },
+  "groups": [
+    {
+      "group": "A",
+      "teams": [
+        "Mexico",
+        "South Africa",
+        "South Korea",
+        "Czech Republic"
+      ]
+    },
+    {
+      "group": "B",
+      "teams": [
+        "Canada",
+        "Bosnia & Herzegovina",
+        "Qatar",
+        "Switzerland"
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        "Brazil",
+        "Morocco",
+        "Haiti",
+        "Scotland"
+      ]
+    },
+    {
+      "group": "D",
+      "teams": [
+        "USA",
+        "Paraguay",
+        "Australia",
+        "Turkey"
+      ]
+    },
+    {
+      "group": "E",
+      "teams": [
+        "Germany",
+        "Curaçao",
+        "Ivory Coast",
+        "Ecuador"
+      ]
+    },
+    {
+      "group": "F",
+      "teams": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ]
+    },
+    {
+      "group": "G",
+      "teams": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ]
+    },
+    {
+      "group": "H",
+      "teams": [
+        "Spain",
+        "Cape Verde",
+        "Saudi Arabia",
+        "Uruguay"
+      ]
+    },
+    {
+      "group": "I",
+      "teams": [
+        "France",
+        "Senegal",
+        "Iraq",
+        "Norway"
+      ]
+    },
+    {
+      "group": "J",
+      "teams": [
+        "Argentina",
+        "Algeria",
+        "Austria",
+        "Jordan"
+      ]
+    },
+    {
+      "group": "K",
+      "teams": [
+        "Portugal",
+        "DR Congo",
+        "Uzbekistan",
+        "Colombia"
+      ]
+    },
+    {
+      "group": "L",
+      "teams": [
+        "England",
+        "Croatia",
+        "Ghana",
+        "Panama"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "name": "Spain",
+      "group": "H",
+      "elo": 2233,
+      "recentScore": 87,
+      "historyScore": 58,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 63,
+      "recentGoalsAgainst": 23,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 89.89,
+      "attack": 1.976,
+      "defense": 0.613
+    },
+    {
+      "name": "Argentina",
+      "group": "J",
+      "elo": 2185,
+      "recentScore": 86,
+      "historyScore": 60,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 51,
+      "recentGoalsAgainst": 10,
+      "fifaRank": 11,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 85.92,
+      "attack": 1.891,
+      "defense": 0.611
+    },
+    {
+      "name": "France",
+      "group": "I",
+      "elo": 2152,
+      "recentScore": 75,
+      "historyScore": 72,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 48,
+      "recentGoalsAgainst": 25,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 82.94,
+      "attack": 1.848,
+      "defense": 0.666
+    },
+    {
+      "name": "England",
+      "group": "L",
+      "elo": 2139,
+      "recentScore": 85,
+      "historyScore": 46,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 53,
+      "recentGoalsAgainst": 13,
+      "fifaRank": 5,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 80.35,
+      "attack": 1.837,
+      "defense": 0.656
+    },
+    {
+      "name": "Germany",
+      "group": "E",
+      "elo": 2048,
+      "recentScore": 80,
+      "historyScore": 66,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 58,
+      "recentGoalsAgainst": 23,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 75.6,
+      "attack": 1.803,
+      "defense": 0.712
+    },
+    {
+      "name": "Brazil",
+      "group": "C",
+      "elo": 2080,
+      "recentScore": 68,
+      "historyScore": 58,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 43,
+      "recentGoalsAgainst": 22,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 73.55,
+      "attack": 1.729,
+      "defense": 0.724
+    },
+    {
+      "name": "Netherlands",
+      "group": "F",
+      "elo": 2041,
+      "recentScore": 71,
+      "historyScore": 73,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 58,
+      "recentGoalsAgainst": 26,
+      "fifaRank": 11,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 73.35,
+      "attack": 1.779,
+      "defense": 0.734
+    },
+    {
+      "name": "Morocco",
+      "group": "C",
+      "elo": 2023,
+      "recentScore": 92,
+      "historyScore": 38,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 50,
+      "recentGoalsAgainst": 7,
+      "fifaRank": 3,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 72.43,
+      "attack": 1.741,
+      "defense": 0.697
+    },
+    {
+      "name": "Portugal",
+      "group": "K",
+      "elo": 2051,
+      "recentScore": 76,
+      "historyScore": 46,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 51,
+      "recentGoalsAgainst": 22,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 71.61,
+      "attack": 1.735,
+      "defense": 0.737
+    },
+    {
+      "name": "Japan",
+      "group": "F",
+      "elo": 2034,
+      "recentScore": 85,
+      "historyScore": 41,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 58,
+      "recentGoalsAgainst": 12,
+      "fifaRank": 12,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 71.41,
+      "attack": 1.758,
+      "defense": 0.715
+    },
+    {
+      "name": "Norway",
+      "group": "I",
+      "elo": 2048,
+      "recentScore": 79,
+      "historyScore": 40,
+      "recentGames": 24,
+      "worldCupGames": 8,
+      "recentGoalsFor": 65,
+      "recentGoalsAgainst": 23,
+      "fifaRank": 10,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 70.81,
+      "attack": 1.775,
+      "defense": 0.745
+    },
+    {
+      "name": "Colombia",
+      "group": "K",
+      "elo": 2076,
+      "recentScore": 64,
+      "historyScore": 49,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 45,
+      "recentGoalsAgainst": 24,
+      "fifaRank": 6,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 70.57,
+      "attack": 1.703,
+      "defense": 0.749
+    },
+    {
+      "name": "Turkey",
+      "group": "D",
+      "elo": 2007,
+      "recentScore": 76,
+      "historyScore": 53,
+      "recentGames": 24,
+      "worldCupGames": 10,
+      "recentGoalsFor": 47,
+      "recentGoalsAgainst": 29,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 69.46,
+      "attack": 1.698,
+      "defense": 0.768
+    },
+    {
+      "name": "Ecuador",
+      "group": "E",
+      "elo": 2063,
+      "recentScore": 64,
+      "historyScore": 45,
+      "recentGames": 24,
+      "worldCupGames": 13,
+      "recentGoalsFor": 25,
+      "recentGoalsAgainst": 11,
+      "fifaRank": 7,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 68.93,
+      "attack": 1.616,
+      "defense": 0.73
+    },
+    {
+      "name": "Belgium",
+      "group": "G",
+      "elo": 1991,
+      "recentScore": 66,
+      "historyScore": 65,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 54,
+      "recentGoalsAgainst": 24,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 67.53,
+      "attack": 1.702,
+      "defense": 0.77
+    },
+    {
+      "name": "Croatia",
+      "group": "L",
+      "elo": 2005,
+      "recentScore": 69,
+      "historyScore": 49,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 46,
+      "recentGoalsAgainst": 28,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 66.84,
+      "attack": 1.666,
+      "defense": 0.784
+    },
+    {
+      "name": "Senegal",
+      "group": "I",
+      "elo": 1915,
+      "recentScore": 83,
+      "historyScore": 51,
+      "recentGames": 24,
+      "worldCupGames": 12,
+      "recentGoalsFor": 51,
+      "recentGoalsAgainst": 15,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 64.16,
+      "attack": 1.655,
+      "defense": 0.772
+    },
+    {
+      "name": "Switzerland",
+      "group": "B",
+      "elo": 1989,
+      "recentScore": 61,
+      "historyScore": 49,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 45,
+      "recentGoalsAgainst": 29,
+      "fifaRank": 18,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 62.71,
+      "attack": 1.618,
+      "defense": 0.815
+    },
+    {
+      "name": "Uruguay",
+      "group": "H",
+      "elo": 1980,
+      "recentScore": 55,
+      "historyScore": 56,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 23,
+      "recentGoalsAgainst": 18,
+      "fifaRank": 3,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 62.35,
+      "attack": 1.538,
+      "defense": 0.792
+    },
+    {
+      "name": "Algeria",
+      "group": "J",
+      "elo": 1907,
+      "recentScore": 87,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 13,
+      "recentGoalsFor": 56,
+      "recentGoalsAgainst": 14,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 61.94,
+      "attack": 1.648,
+      "defense": 0.785
+    },
+    {
+      "name": "Australia",
+      "group": "D",
+      "elo": 1928,
+      "recentScore": 73,
+      "historyScore": 31,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 43,
+      "recentGoalsAgainst": 17,
+      "fifaRank": 5,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 59.18,
+      "attack": 1.573,
+      "defense": 0.811
+    },
+    {
+      "name": "Paraguay",
+      "group": "D",
+      "elo": 1966,
+      "recentScore": 58,
+      "historyScore": 41,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 28,
+      "recentGoalsAgainst": 27,
+      "fifaRank": 20,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 58.84,
+      "attack": 1.517,
+      "defense": 0.837
+    },
+    {
+      "name": "Mexico",
+      "group": "A",
+      "elo": 1991,
+      "recentScore": 74,
+      "historyScore": 43,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 36,
+      "recentGoalsAgainst": 19,
+      "fifaRank": 202,
+      "fifaRankSource": "fifa-page",
+      "isHost": true,
+      "playerScore": null,
+      "strength": 58.69,
+      "attack": 1.543,
+      "defense": 0.819
+    },
+    {
+      "name": "Iran",
+      "group": "G",
+      "elo": 1923,
+      "recentScore": 77,
+      "historyScore": 28,
+      "recentGames": 24,
+      "worldCupGames": 18,
+      "recentGoalsFor": 47,
+      "recentGoalsAgainst": 19,
+      "fifaRank": 23,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 58.45,
+      "attack": 1.578,
+      "defense": 0.821
+    },
+    {
+      "name": "South Korea",
+      "group": "A",
+      "elo": 1909,
+      "recentScore": 78,
+      "historyScore": 32,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 47,
+      "recentGoalsAgainst": 20,
+      "fifaRank": 25,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 58.2,
+      "attack": 1.576,
+      "defense": 0.825
+    },
+    {
+      "name": "Austria",
+      "group": "J",
+      "elo": 1905,
+      "recentScore": 74,
+      "historyScore": 39,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 52,
+      "recentGoalsAgainst": 20,
+      "fifaRank": 28,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 57.8,
+      "attack": 1.589,
+      "defense": 0.828
+    },
+    {
+      "name": "Canada",
+      "group": "B",
+      "elo": 1923,
+      "recentScore": 72,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 6,
+      "recentGoalsFor": 37,
+      "recentGoalsAgainst": 15,
+      "fifaRank": 22,
+      "fifaRankSource": "elo-estimate",
+      "isHost": true,
+      "playerScore": null,
+      "strength": 57.03,
+      "attack": 1.528,
+      "defense": 0.821
+    },
+    {
+      "name": "USA",
+      "group": "D",
+      "elo": 1885,
+      "recentScore": 64,
+      "historyScore": 39,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 44,
+      "recentGoalsAgainst": 35,
+      "fifaRank": 29,
+      "fifaRankSource": "elo-estimate",
+      "isHost": true,
+      "playerScore": null,
+      "strength": 56.63,
+      "attack": 1.548,
+      "defense": 0.87
+    },
+    {
+      "name": "Ivory Coast",
+      "group": "E",
+      "elo": 1833,
+      "recentScore": 78,
+      "historyScore": 39,
+      "recentGames": 24,
+      "worldCupGames": 9,
+      "recentGoalsFor": 44,
+      "recentGoalsAgainst": 12,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 54.87,
+      "attack": 1.529,
+      "defense": 0.829
+    },
+    {
+      "name": "Scotland",
+      "group": "C",
+      "elo": 1905,
+      "recentScore": 56,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 38,
+      "recentGoalsAgainst": 33,
+      "fifaRank": 27,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 52.32,
+      "attack": 1.481,
+      "defense": 0.896
+    },
+    {
+      "name": "Uzbekistan",
+      "group": "K",
+      "elo": 1849,
+      "recentScore": 69,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 0,
+      "recentGoalsFor": 33,
+      "recentGoalsAgainst": 17,
+      "fifaRank": 30,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 51.44,
+      "attack": 1.454,
+      "defense": 0.865
+    },
+    {
+      "name": "Czech Republic",
+      "group": "A",
+      "elo": 1826,
+      "recentScore": 67,
+      "historyScore": 36,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 45,
+      "recentGoalsAgainst": 29,
+      "fifaRank": 33,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 49.36,
+      "attack": 1.473,
+      "defense": 0.907
+    },
+    {
+      "name": "Sweden",
+      "group": "F",
+      "elo": 1789,
+      "recentScore": 60,
+      "historyScore": 52,
+      "recentGames": 24,
+      "worldCupGames": 20,
+      "recentGoalsFor": 47,
+      "recentGoalsAgainst": 39,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 48.93,
+      "attack": 1.475,
+      "defense": 0.933
+    },
+    {
+      "name": "Egypt",
+      "group": "G",
+      "elo": 1822,
+      "recentScore": 66,
+      "historyScore": 16,
+      "recentGames": 24,
+      "worldCupGames": 7,
+      "recentGoalsFor": 29,
+      "recentGoalsAgainst": 17,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 47.27,
+      "attack": 1.394,
+      "defense": 0.893
+    },
+    {
+      "name": "Panama",
+      "group": "L",
+      "elo": 1846,
+      "recentScore": 68,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 42,
+      "recentGoalsAgainst": 31,
+      "fifaRank": 31,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 46.79,
+      "attack": 1.434,
+      "defense": 0.929
+    },
+    {
+      "name": "DR Congo",
+      "group": "K",
+      "elo": 1785,
+      "recentScore": 76,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 33,
+      "recentGoalsAgainst": 13,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 45.9,
+      "attack": 1.393,
+      "defense": 0.894
+    },
+    {
+      "name": "Tunisia",
+      "group": "F",
+      "elo": 1766,
+      "recentScore": 66,
+      "historyScore": 30,
+      "recentGames": 24,
+      "worldCupGames": 18,
+      "recentGoalsFor": 39,
+      "recentGoalsAgainst": 24,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 45.33,
+      "attack": 1.408,
+      "defense": 0.923
+    },
+    {
+      "name": "New Zealand",
+      "group": "G",
+      "elo": 1777,
+      "recentScore": 65,
+      "historyScore": 22,
+      "recentGames": 24,
+      "worldCupGames": 6,
+      "recentGoalsFor": 58,
+      "recentGoalsAgainst": 25,
+      "fifaRank": 38,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 42.73,
+      "attack": 1.446,
+      "defense": 0.943
+    },
+    {
+      "name": "Jordan",
+      "group": "J",
+      "elo": 1779,
+      "recentScore": 53,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 0,
+      "recentGoalsFor": 35,
+      "recentGoalsAgainst": 33,
+      "fifaRank": 37,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 41.67,
+      "attack": 1.354,
+      "defense": 0.969
+    },
+    {
+      "name": "Iraq",
+      "group": "I",
+      "elo": 1777,
+      "recentScore": 59,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 24,
+      "recentGoalsAgainst": 25,
+      "fifaRank": 39,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 38.89,
+      "attack": 1.286,
+      "defense": 0.97
+    },
+    {
+      "name": "South Africa",
+      "group": "A",
+      "elo": 1666,
+      "recentScore": 72,
+      "historyScore": 39,
+      "recentGames": 24,
+      "worldCupGames": 9,
+      "recentGoalsFor": 42,
+      "recentGoalsAgainst": 20,
+      "fifaRank": 44,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 38.72,
+      "attack": 1.347,
+      "defense": 0.959
+    },
+    {
+      "name": "Haiti",
+      "group": "C",
+      "elo": 1718,
+      "recentScore": 74,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 60,
+      "recentGoalsAgainst": 26,
+      "fifaRank": 41,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 38.36,
+      "attack": 1.405,
+      "defense": 0.976
+    },
+    {
+      "name": "Curaçao",
+      "group": "E",
+      "elo": 1666,
+      "recentScore": 68,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 0,
+      "recentGoalsFor": 51,
+      "recentGoalsAgainst": 24,
+      "fifaRank": 45,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 36.82,
+      "attack": 1.357,
+      "defense": 0.982
+    },
+    {
+      "name": "Saudi Arabia",
+      "group": "H",
+      "elo": 1713,
+      "recentScore": 57,
+      "historyScore": 29,
+      "recentGames": 24,
+      "worldCupGames": 19,
+      "recentGoalsFor": 26,
+      "recentGoalsAgainst": 25,
+      "fifaRank": 42,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 36.78,
+      "attack": 1.27,
+      "defense": 0.984
+    },
+    {
+      "name": "Bosnia & Herzegovina",
+      "group": "B",
+      "elo": 1703,
+      "recentScore": 47,
+      "historyScore": 36,
+      "recentGames": 23,
+      "worldCupGames": 3,
+      "recentGoalsFor": 30,
+      "recentGoalsAgainst": 36,
+      "fifaRank": 2,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 36.61,
+      "attack": 1.287,
+      "defense": 1.014
+    },
+    {
+      "name": "Cape Verde",
+      "group": "H",
+      "elo": 1661,
+      "recentScore": 59,
+      "historyScore": 34,
+      "recentGames": 24,
+      "worldCupGames": 0,
+      "recentGoalsFor": 30,
+      "recentGoalsAgainst": 26,
+      "fifaRank": 47,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 33.98,
+      "attack": 1.254,
+      "defense": 1.006
+    },
+    {
+      "name": "Ghana",
+      "group": "L",
+      "elo": 1666,
+      "recentScore": 52,
+      "historyScore": 42,
+      "recentGames": 24,
+      "worldCupGames": 15,
+      "recentGoalsFor": 36,
+      "recentGoalsAgainst": 31,
+      "fifaRank": 46,
+      "fifaRankSource": "elo-estimate",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 33.82,
+      "attack": 1.273,
+      "defense": 1.018
+    },
+    {
+      "name": "Qatar",
+      "group": "B",
+      "elo": 1594,
+      "recentScore": 41,
+      "historyScore": 8,
+      "recentGames": 24,
+      "worldCupGames": 3,
+      "recentGoalsFor": 29,
+      "recentGoalsAgainst": 45,
+      "fifaRank": 22,
+      "fifaRankSource": "fifa-page",
+      "isHost": false,
+      "playerScore": null,
+      "strength": 21.48,
+      "attack": 1.114,
+      "defense": 1.136
+    }
+  ],
+  "matches": [
+    {
+      "id": "GA-01",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-11",
+      "time": "13:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa",
+      "city": "Mexico City",
+      "prediction": {
+        "homeTeam": "Mexico",
+        "awayTeam": "South Africa",
+        "homeWin": 0.5999,
+        "draw": 0.2051,
+        "awayWin": 0.1949,
+        "expectedGoals": {
+          "home": 2.12,
+          "away": 1.12
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0985
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0932
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0876
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0828
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0695
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Mexico",
+        "awayTeam": "South Africa",
+        "homeWin": 0.7035,
+        "draw": 0.1661,
+        "awayWin": 0.1304,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GA-02",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-11",
+      "time": "20:00",
+      "timezone": "UTC-6",
+      "homeTeam": "South Korea",
+      "awayTeam": "Czech Republic",
+      "city": "Guadalajara (Zapopan)",
+      "prediction": {
+        "homeTeam": "South Korea",
+        "awayTeam": "Czech Republic",
+        "homeWin": 0.4969,
+        "draw": 0.2267,
+        "awayWin": 0.2763,
+        "expectedGoals": {
+          "home": 1.86,
+          "away": 1.33
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.102
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0946
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0764
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0709
+          },
+          {
+            "score": "1-2",
+            "probability": 0.068
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "South Korea",
+        "awayTeam": "Czech Republic",
+        "homeWin": 0.538,
+        "draw": 0.2158,
+        "awayWin": 0.2462,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GA-03",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-18",
+      "time": "12:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Czech Republic",
+      "awayTeam": "South Africa",
+      "city": "Atlanta",
+      "prediction": {
+        "homeTeam": "Czech Republic",
+        "awayTeam": "South Africa",
+        "homeWin": 0.4966,
+        "draw": 0.2272,
+        "awayWin": 0.2762,
+        "expectedGoals": {
+          "home": 1.85,
+          "away": 1.33
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1024
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0947
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0771
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0713
+          },
+          {
+            "score": "1-2",
+            "probability": 0.068
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Czech Republic",
+        "awayTeam": "South Africa",
+        "homeWin": 0.5303,
+        "draw": 0.2183,
+        "awayWin": 0.2514,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GA-04",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-18",
+      "time": "19:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Korea",
+      "city": "Guadalajara (Zapopan)",
+      "prediction": {
+        "homeTeam": "Mexico",
+        "awayTeam": "South Korea",
+        "homeWin": 0.4311,
+        "draw": 0.2335,
+        "awayWin": 0.3355,
+        "expectedGoals": {
+          "home": 1.71,
+          "away": 1.48
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1044
+          },
+          {
+            "score": "2-1",
+            "probability": 0.089
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0773
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0705
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0659
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Mexico",
+        "awayTeam": "South Korea",
+        "homeWin": 0.4749,
+        "draw": 0.2245,
+        "awayWin": 0.3007,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GA-05",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-24",
+      "time": "19:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Czech Republic",
+      "awayTeam": "Mexico",
+      "city": "Mexico City",
+      "prediction": {
+        "homeTeam": "Czech Republic",
+        "awayTeam": "Mexico",
+        "homeWin": 0.3158,
+        "draw": 0.2316,
+        "awayWin": 0.4525,
+        "expectedGoals": {
+          "home": 1.44,
+          "away": 1.76
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1036
+          },
+          {
+            "score": "1-2",
+            "probability": 0.091
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0744
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0722
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0653
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Czech Republic",
+        "awayTeam": "Mexico",
+        "homeWin": 0.2574,
+        "draw": 0.2134,
+        "awayWin": 0.5292,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GA-06",
+      "stage": "小组赛",
+      "group": "A",
+      "date": "2026-06-24",
+      "time": "19:00",
+      "timezone": "UTC-6",
+      "homeTeam": "South Africa",
+      "awayTeam": "South Korea",
+      "city": "Monterrey (Guadalupe)",
+      "prediction": {
+        "homeTeam": "South Africa",
+        "awayTeam": "South Korea",
+        "homeWin": 0.251,
+        "draw": 0.2254,
+        "awayWin": 0.5235,
+        "expectedGoals": {
+          "home": 1.24,
+          "away": 1.88
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1031
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0968
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0833
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0782
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0638
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "South Africa",
+        "awayTeam": "South Korea",
+        "homeWin": 0.2005,
+        "draw": 0.2032,
+        "awayWin": 0.5963,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GB-01",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-12",
+      "time": "15:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Canada",
+      "awayTeam": "Bosnia & Herzegovina",
+      "city": "Toronto",
+      "prediction": {
+        "homeTeam": "Canada",
+        "awayTeam": "Bosnia & Herzegovina",
+        "homeWin": 0.631,
+        "draw": 0.196,
+        "awayWin": 0.1731,
+        "expectedGoals": {
+          "home": 2.21,
+          "away": 1.07
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0984
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0921
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0892
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0835
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0723
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Canada",
+        "awayTeam": "Bosnia & Herzegovina",
+        "homeWin": 0.7305,
+        "draw": 0.156,
+        "awayWin": 0.1136,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GB-02",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-13",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Qatar",
+      "awayTeam": "Switzerland",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "prediction": {
+        "homeTeam": "Qatar",
+        "awayTeam": "Switzerland",
+        "homeWin": 0.1078,
+        "draw": 0.1661,
+        "awayWin": 0.7261,
+        "expectedGoals": {
+          "home": 0.81,
+          "away": 2.41
+        },
+        "predictedScore": "0-2",
+        "topScores": [
+          {
+            "score": "0-2",
+            "probability": 0.1156
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0959
+          },
+          {
+            "score": "1-2",
+            "probability": 0.094
+          },
+          {
+            "score": "0-3",
+            "probability": 0.0929
+          },
+          {
+            "score": "1-1",
+            "probability": 0.078
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Qatar",
+        "awayTeam": "Switzerland",
+        "homeWin": 0.0482,
+        "draw": 0.103,
+        "awayWin": 0.8489,
+        "predictedScore": "0-2"
+      }
+    },
+    {
+      "id": "GB-03",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-18",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Bosnia & Herzegovina",
+      "city": "Los Angeles (Inglewood)",
+      "prediction": {
+        "homeTeam": "Switzerland",
+        "awayTeam": "Bosnia & Herzegovina",
+        "homeWin": 0.6516,
+        "draw": 0.19,
+        "awayWin": 0.1583,
+        "expectedGoals": {
+          "home": 2.25,
+          "away": 1.02
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0981
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0963
+          },
+          {
+            "score": "1-1",
+            "probability": 0.087
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0854
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0737
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Switzerland",
+        "awayTeam": "Bosnia & Herzegovina",
+        "homeWin": 0.7481,
+        "draw": 0.1494,
+        "awayWin": 0.1025,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GB-04",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-18",
+      "time": "15:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Canada",
+      "awayTeam": "Qatar",
+      "city": "Vancouver",
+      "prediction": {
+        "homeTeam": "Canada",
+        "awayTeam": "Qatar",
+        "homeWin": 0.7529,
+        "draw": 0.1525,
+        "awayWin": 0.0946,
+        "expectedGoals": {
+          "home": 2.56,
+          "away": 0.8
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1144
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0975
+          },
+          {
+            "score": "2-1",
+            "probability": 0.091
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0895
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0776
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Canada",
+        "awayTeam": "Qatar",
+        "homeWin": 0.865,
+        "draw": 0.0932,
+        "awayWin": 0.0418,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GB-05",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-24",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Canada",
+      "city": "Vancouver",
+      "prediction": {
+        "homeTeam": "Switzerland",
+        "awayTeam": "Canada",
+        "homeWin": 0.433,
+        "draw": 0.2337,
+        "awayWin": 0.3333,
+        "expectedGoals": {
+          "home": 1.7,
+          "away": 1.47
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1047
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0893
+          },
+          {
+            "score": "1-2",
+            "probability": 0.077
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0712
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0657
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Switzerland",
+        "awayTeam": "Canada",
+        "homeWin": 0.4425,
+        "draw": 0.2318,
+        "awayWin": 0.3256,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GB-06",
+      "stage": "小组赛",
+      "group": "B",
+      "date": "2026-06-24",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Bosnia & Herzegovina",
+      "awayTeam": "Qatar",
+      "city": "Seattle",
+      "prediction": {
+        "homeTeam": "Bosnia & Herzegovina",
+        "awayTeam": "Qatar",
+        "homeWin": 0.5491,
+        "draw": 0.22,
+        "awayWin": 0.2309,
+        "expectedGoals": {
+          "home": 1.95,
+          "away": 1.19
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1007
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0979
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0846
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0823
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0635
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Bosnia & Herzegovina",
+        "awayTeam": "Qatar",
+        "homeWin": 0.6269,
+        "draw": 0.1944,
+        "awayWin": 0.1788,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GC-01",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-13",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Brazil",
+      "awayTeam": "Morocco",
+      "city": "New York/New Jersey (East Rutherford)",
+      "prediction": {
+        "homeTeam": "Brazil",
+        "awayTeam": "Morocco",
+        "homeWin": 0.3938,
+        "draw": 0.2449,
+        "awayWin": 0.3613,
+        "expectedGoals": {
+          "home": 1.52,
+          "away": 1.44
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1136
+          },
+          {
+            "score": "2-1",
+            "probability": 0.086
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0818
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0788
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0749
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Brazil",
+        "awayTeam": "Morocco",
+        "homeWin": 0.39,
+        "draw": 0.2443,
+        "awayWin": 0.3656,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GC-02",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-13",
+      "time": "21:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Haiti",
+      "awayTeam": "Scotland",
+      "city": "Boston (Foxborough)",
+      "prediction": {
+        "homeTeam": "Haiti",
+        "awayTeam": "Scotland",
+        "homeWin": 0.3216,
+        "draw": 0.2306,
+        "awayWin": 0.4478,
+        "expectedGoals": {
+          "home": 1.46,
+          "away": 1.76
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1024
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0902
+          },
+          {
+            "score": "2-1",
+            "probability": 0.075
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0699
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0661
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Haiti",
+        "awayTeam": "Scotland",
+        "homeWin": 0.2794,
+        "draw": 0.2185,
+        "awayWin": 0.5021,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GC-03",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-19",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Scotland",
+      "awayTeam": "Morocco",
+      "city": "Boston (Foxborough)",
+      "prediction": {
+        "homeTeam": "Scotland",
+        "awayTeam": "Morocco",
+        "homeWin": 0.2194,
+        "draw": 0.2199,
+        "awayWin": 0.5607,
+        "expectedGoals": {
+          "home": 1.13,
+          "away": 1.94
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1018
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0987
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0898
+          },
+          {
+            "score": "0-2",
+            "probability": 0.087
+          },
+          {
+            "score": "1-3",
+            "probability": 0.0638
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Scotland",
+        "awayTeam": "Morocco",
+        "homeWin": 0.1525,
+        "draw": 0.1832,
+        "awayWin": 0.6643,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GC-04",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-19",
+      "time": "20:30",
+      "timezone": "UTC-4",
+      "homeTeam": "Brazil",
+      "awayTeam": "Haiti",
+      "city": "Philadelphia",
+      "prediction": {
+        "homeTeam": "Brazil",
+        "awayTeam": "Haiti",
+        "homeWin": 0.6982,
+        "draw": 0.1743,
+        "awayWin": 0.1275,
+        "expectedGoals": {
+          "home": 2.38,
+          "away": 0.92
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1048
+          },
+          {
+            "score": "2-1",
+            "probability": 0.096
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0879
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0833
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0806
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Brazil",
+        "awayTeam": "Haiti",
+        "homeWin": 0.8095,
+        "draw": 0.1218,
+        "awayWin": 0.0687,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GC-05",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-24",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Scotland",
+      "awayTeam": "Brazil",
+      "city": "Miami (Miami Gardens)",
+      "prediction": {
+        "homeTeam": "Scotland",
+        "awayTeam": "Brazil",
+        "homeWin": 0.2291,
+        "draw": 0.2207,
+        "awayWin": 0.5502,
+        "expectedGoals": {
+          "home": 1.17,
+          "away": 1.93
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1014
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0981
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0864
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0835
+          },
+          {
+            "score": "1-3",
+            "probability": 0.0633
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Scotland",
+        "awayTeam": "Brazil",
+        "homeWin": 0.1625,
+        "draw": 0.1863,
+        "awayWin": 0.6511,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GC-06",
+      "stage": "小组赛",
+      "group": "C",
+      "date": "2026-06-24",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Morocco",
+      "awayTeam": "Haiti",
+      "city": "Atlanta",
+      "prediction": {
+        "homeTeam": "Morocco",
+        "awayTeam": "Haiti",
+        "homeWin": 0.7073,
+        "draw": 0.1718,
+        "awayWin": 0.1209,
+        "expectedGoals": {
+          "home": 2.39,
+          "away": 0.88
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1085
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0955
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0908
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0864
+          },
+          {
+            "score": "1-1",
+            "probability": 0.08
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Morocco",
+        "awayTeam": "Haiti",
+        "homeWin": 0.8183,
+        "draw": 0.1181,
+        "awayWin": 0.0636,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GD-01",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-12",
+      "time": "18:00",
+      "timezone": "UTC-7",
+      "homeTeam": "USA",
+      "awayTeam": "Paraguay",
+      "city": "Los Angeles (Inglewood)",
+      "prediction": {
+        "homeTeam": "USA",
+        "awayTeam": "Paraguay",
+        "homeWin": 0.422,
+        "draw": 0.2316,
+        "awayWin": 0.3464,
+        "expectedGoals": {
+          "home": 1.71,
+          "away": 1.53
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1022
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0875
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0784
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0671
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0667
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "USA",
+        "awayTeam": "Paraguay",
+        "homeWin": 0.456,
+        "draw": 0.2251,
+        "awayWin": 0.3189,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GD-02",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-13",
+      "time": "21:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Australia",
+      "awayTeam": "Turkey",
+      "city": "Vancouver",
+      "prediction": {
+        "homeTeam": "Australia",
+        "awayTeam": "Turkey",
+        "homeWin": 0.332,
+        "draw": 0.2375,
+        "awayWin": 0.4305,
+        "expectedGoals": {
+          "home": 1.43,
+          "away": 1.66
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1081
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0896
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0773
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0756
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0652
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Australia",
+        "awayTeam": "Turkey",
+        "homeWin": 0.2873,
+        "draw": 0.2252,
+        "awayWin": 0.4874,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GD-03",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-19",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "USA",
+      "awayTeam": "Australia",
+      "city": "Seattle",
+      "prediction": {
+        "homeTeam": "USA",
+        "awayTeam": "Australia",
+        "homeWin": 0.3981,
+        "draw": 0.2322,
+        "awayWin": 0.3697,
+        "expectedGoals": {
+          "home": 1.66,
+          "away": 1.59
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1023
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0849
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0814
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0676
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0642
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "USA",
+        "awayTeam": "Australia",
+        "homeWin": 0.4233,
+        "draw": 0.2281,
+        "awayWin": 0.3486,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GD-04",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-19",
+      "time": "20:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Turkey",
+      "awayTeam": "Paraguay",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "prediction": {
+        "homeTeam": "Turkey",
+        "awayTeam": "Paraguay",
+        "homeWin": 0.5134,
+        "draw": 0.2268,
+        "awayWin": 0.2598,
+        "expectedGoals": {
+          "home": 1.86,
+          "away": 1.26
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1034
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0962
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0819
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0761
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0653
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Turkey",
+        "awayTeam": "Paraguay",
+        "homeWin": 0.5774,
+        "draw": 0.208,
+        "awayWin": 0.2146,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GD-05",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Turkey",
+      "awayTeam": "USA",
+      "city": "Los Angeles (Inglewood)",
+      "prediction": {
+        "homeTeam": "Turkey",
+        "awayTeam": "USA",
+        "homeWin": 0.5126,
+        "draw": 0.2204,
+        "awayWin": 0.267,
+        "expectedGoals": {
+          "home": 1.95,
+          "away": 1.35
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.0971
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0945
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0717
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0698
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0658
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Turkey",
+        "awayTeam": "USA",
+        "homeWin": 0.5522,
+        "draw": 0.2096,
+        "awayWin": 0.2382,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GD-06",
+      "stage": "小组赛",
+      "group": "D",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Paraguay",
+      "awayTeam": "Australia",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "prediction": {
+        "homeTeam": "Paraguay",
+        "awayTeam": "Australia",
+        "homeWin": 0.3837,
+        "draw": 0.2407,
+        "awayWin": 0.3756,
+        "expectedGoals": {
+          "home": 1.54,
+          "away": 1.52
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1101
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0845
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0835
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0726
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0717
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Paraguay",
+        "awayTeam": "Australia",
+        "homeWin": 0.3767,
+        "draw": 0.2395,
+        "awayWin": 0.3838,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GE-01",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-14",
+      "time": "12:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao",
+      "city": "Houston",
+      "prediction": {
+        "homeTeam": "Germany",
+        "awayTeam": "Curaçao",
+        "homeWin": 0.7387,
+        "draw": 0.1582,
+        "awayWin": 0.1031,
+        "expectedGoals": {
+          "home": 2.52,
+          "away": 0.83
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1113
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0933
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0926
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0885
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0776
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Germany",
+        "awayTeam": "Curaçao",
+        "homeWin": 0.8464,
+        "draw": 0.1032,
+        "awayWin": 0.0503,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GE-02",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-14",
+      "time": "19:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Ecuador",
+      "city": "Philadelphia",
+      "prediction": {
+        "homeTeam": "Ivory Coast",
+        "awayTeam": "Ecuador",
+        "homeWin": 0.3002,
+        "draw": 0.2422,
+        "awayWin": 0.4576,
+        "expectedGoals": {
+          "home": 1.29,
+          "away": 1.64
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.113
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0928
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0879
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0726
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0722
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Ivory Coast",
+        "awayTeam": "Ecuador",
+        "homeWin": 0.2668,
+        "draw": 0.2312,
+        "awayWin": 0.502,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GE-03",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-20",
+      "time": "16:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Germany",
+      "awayTeam": "Ivory Coast",
+      "city": "Toronto",
+      "prediction": {
+        "homeTeam": "Germany",
+        "awayTeam": "Ivory Coast",
+        "homeWin": 0.5874,
+        "draw": 0.2117,
+        "awayWin": 0.2009,
+        "expectedGoals": {
+          "home": 2.03,
+          "away": 1.1
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0991
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0976
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0898
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0885
+          },
+          {
+            "score": "3-1",
+            "probability": 0.067
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Germany",
+        "awayTeam": "Ivory Coast",
+        "homeWin": 0.6763,
+        "draw": 0.1789,
+        "awayWin": 0.1448,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GE-04",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-20",
+      "time": "19:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao",
+      "city": "Kansas City",
+      "prediction": {
+        "homeTeam": "Ecuador",
+        "awayTeam": "Curaçao",
+        "homeWin": 0.6734,
+        "draw": 0.187,
+        "awayWin": 0.1395,
+        "expectedGoals": {
+          "home": 2.23,
+          "away": 0.91
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1078
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0979
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0965
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0876
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0803
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Ecuador",
+        "awayTeam": "Curaçao",
+        "homeWin": 0.7683,
+        "draw": 0.144,
+        "awayWin": 0.0877,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GE-05",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-25",
+      "time": "16:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Curaçao",
+      "awayTeam": "Ivory Coast",
+      "city": "Philadelphia",
+      "prediction": {
+        "homeTeam": "Curaçao",
+        "awayTeam": "Ivory Coast",
+        "homeWin": 0.2607,
+        "draw": 0.227,
+        "awayWin": 0.5123,
+        "expectedGoals": {
+          "home": 1.27,
+          "away": 1.86
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1035
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0961
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0818
+          },
+          {
+            "score": "0-2",
+            "probability": 0.076
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0655
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Curaçao",
+        "awayTeam": "Ivory Coast",
+        "homeWin": 0.2049,
+        "draw": 0.2034,
+        "awayWin": 0.5917,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GE-06",
+      "stage": "小组赛",
+      "group": "E",
+      "date": "2026-06-25",
+      "time": "16:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Germany",
+      "city": "New York/New Jersey (East Rutherford)",
+      "prediction": {
+        "homeTeam": "Ecuador",
+        "awayTeam": "Germany",
+        "homeWin": 0.339,
+        "draw": 0.2445,
+        "awayWin": 0.4165,
+        "expectedGoals": {
+          "home": 1.39,
+          "away": 1.56
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1135
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0887
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0819
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0787
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0727
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Ecuador",
+        "awayTeam": "Germany",
+        "homeWin": 0.2961,
+        "draw": 0.2331,
+        "awayWin": 0.4707,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GF-01",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-14",
+      "time": "15:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Japan",
+      "city": "Dallas (Arlington)",
+      "prediction": {
+        "homeTeam": "Netherlands",
+        "awayTeam": "Japan",
+        "homeWin": 0.4098,
+        "draw": 0.2391,
+        "awayWin": 0.3511,
+        "expectedGoals": {
+          "home": 1.61,
+          "away": 1.47
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.109
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0875
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0801
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0741
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0679
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Netherlands",
+        "awayTeam": "Japan",
+        "homeWin": 0.4257,
+        "draw": 0.2362,
+        "awayWin": 0.3381,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GF-02",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-14",
+      "time": "20:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Sweden",
+      "awayTeam": "Tunisia",
+      "city": "Monterrey (Guadalupe)",
+      "prediction": {
+        "homeTeam": "Sweden",
+        "awayTeam": "Tunisia",
+        "homeWin": 0.436,
+        "draw": 0.232,
+        "awayWin": 0.332,
+        "expectedGoals": {
+          "home": 1.73,
+          "away": 1.48
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1032
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0892
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0766
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0695
+          },
+          {
+            "score": "2-2",
+            "probability": 0.0663
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Sweden",
+        "awayTeam": "Tunisia",
+        "homeWin": 0.4591,
+        "draw": 0.2274,
+        "awayWin": 0.3135,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GF-03",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-20",
+      "time": "12:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Sweden",
+      "city": "Houston",
+      "prediction": {
+        "homeTeam": "Netherlands",
+        "awayTeam": "Sweden",
+        "homeWin": 0.642,
+        "draw": 0.1911,
+        "awayWin": 0.1669,
+        "expectedGoals": {
+          "home": 2.27,
+          "away": 1.07
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0978
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0914
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0863
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0807
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0738
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Netherlands",
+        "awayTeam": "Sweden",
+        "homeWin": 0.7377,
+        "draw": 0.1522,
+        "awayWin": 0.1101,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GF-04",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-20",
+      "time": "22:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Japan",
+      "city": "Monterrey (Guadalupe)",
+      "prediction": {
+        "homeTeam": "Tunisia",
+        "awayTeam": "Japan",
+        "homeWin": 0.1879,
+        "draw": 0.2086,
+        "awayWin": 0.6035,
+        "expectedGoals": {
+          "home": 1.05,
+          "away": 2.05
+        },
+        "predictedScore": "1-2",
+        "topScores": [
+          {
+            "score": "1-2",
+            "probability": 0.0994
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0968
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0942
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0917
+          },
+          {
+            "score": "1-3",
+            "probability": 0.068
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Tunisia",
+        "awayTeam": "Japan",
+        "homeWin": 0.1229,
+        "draw": 0.1666,
+        "awayWin": 0.7106,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GF-05",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-25",
+      "time": "18:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Japan",
+      "awayTeam": "Sweden",
+      "city": "Dallas (Arlington)",
+      "prediction": {
+        "homeTeam": "Japan",
+        "awayTeam": "Sweden",
+        "homeWin": 0.6387,
+        "draw": 0.1937,
+        "awayWin": 0.1676,
+        "expectedGoals": {
+          "home": 2.23,
+          "away": 1.05
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0983
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0935
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0883
+          },
+          {
+            "score": "1-0",
+            "probability": 0.084
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0729
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Japan",
+        "awayTeam": "Sweden",
+        "homeWin": 0.7228,
+        "draw": 0.1597,
+        "awayWin": 0.1174,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GF-06",
+      "stage": "小组赛",
+      "group": "F",
+      "date": "2026-06-25",
+      "time": "18:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Netherlands",
+      "city": "Kansas City",
+      "prediction": {
+        "homeTeam": "Tunisia",
+        "awayTeam": "Netherlands",
+        "homeWin": 0.1874,
+        "draw": 0.2059,
+        "awayWin": 0.6067,
+        "expectedGoals": {
+          "home": 1.07,
+          "away": 2.09
+        },
+        "predictedScore": "1-2",
+        "topScores": [
+          {
+            "score": "1-2",
+            "probability": 0.0991
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0949
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0924
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0884
+          },
+          {
+            "score": "1-3",
+            "probability": 0.0691
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Tunisia",
+        "awayTeam": "Netherlands",
+        "homeWin": 0.1154,
+        "draw": 0.1589,
+        "awayWin": 0.7257,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GG-01",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-15",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Belgium",
+      "awayTeam": "Egypt",
+      "city": "Seattle",
+      "prediction": {
+        "homeTeam": "Belgium",
+        "awayTeam": "Egypt",
+        "homeWin": 0.5965,
+        "draw": 0.2091,
+        "awayWin": 0.1944,
+        "expectedGoals": {
+          "home": 2.06,
+          "away": 1.09
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0991
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0963
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0911
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0885
+          },
+          {
+            "score": "3-1",
+            "probability": 0.068
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Belgium",
+        "awayTeam": "Egypt",
+        "homeWin": 0.6935,
+        "draw": 0.1723,
+        "awayWin": 0.1342,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GG-02",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-15",
+      "time": "18:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Iran",
+      "awayTeam": "New Zealand",
+      "city": "Los Angeles (Inglewood)",
+      "prediction": {
+        "homeTeam": "Iran",
+        "awayTeam": "New Zealand",
+        "homeWin": 0.5432,
+        "draw": 0.2176,
+        "awayWin": 0.2392,
+        "expectedGoals": {
+          "home": 1.98,
+          "away": 1.25
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.0977
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0969
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0781
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0774
+          },
+          {
+            "score": "3-1",
+            "probability": 0.064
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Iran",
+        "awayTeam": "New Zealand",
+        "homeWin": 0.6151,
+        "draw": 0.1949,
+        "awayWin": 0.1899,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GG-03",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-21",
+      "time": "12:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Belgium",
+      "awayTeam": "Iran",
+      "city": "Los Angeles (Inglewood)",
+      "prediction": {
+        "homeTeam": "Belgium",
+        "awayTeam": "Iran",
+        "homeWin": 0.4887,
+        "draw": 0.2294,
+        "awayWin": 0.282,
+        "expectedGoals": {
+          "home": 1.82,
+          "away": 1.33
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1038
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0943
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0779
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0708
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0691
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Belgium",
+        "awayTeam": "Iran",
+        "homeWin": 0.5378,
+        "draw": 0.2164,
+        "awayWin": 0.2457,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GG-04",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-21",
+      "time": "18:00",
+      "timezone": "UTC-7",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Egypt",
+      "city": "Vancouver",
+      "prediction": {
+        "homeTeam": "New Zealand",
+        "awayTeam": "Egypt",
+        "homeWin": 0.3886,
+        "draw": 0.2376,
+        "awayWin": 0.3738,
+        "expectedGoals": {
+          "home": 1.58,
+          "away": 1.54
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1073
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0847
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0829
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0695
+          },
+          {
+            "score": "0-1",
+            "probability": 0.068
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "New Zealand",
+        "awayTeam": "Egypt",
+        "homeWin": 0.3768,
+        "draw": 0.2357,
+        "awayWin": 0.3875,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GG-05",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-26",
+      "time": "20:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Egypt",
+      "awayTeam": "Iran",
+      "city": "Seattle",
+      "prediction": {
+        "homeTeam": "Egypt",
+        "awayTeam": "Iran",
+        "homeWin": 0.3039,
+        "draw": 0.237,
+        "awayWin": 0.4591,
+        "expectedGoals": {
+          "home": 1.34,
+          "away": 1.7
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1088
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0926
+          },
+          {
+            "score": "0-1",
+            "probability": 0.081
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0731
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0689
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Egypt",
+        "awayTeam": "Iran",
+        "homeWin": 0.2581,
+        "draw": 0.222,
+        "awayWin": 0.52,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GG-06",
+      "stage": "小组赛",
+      "group": "G",
+      "date": "2026-06-26",
+      "time": "20:00",
+      "timezone": "UTC-7",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Belgium",
+      "city": "Vancouver",
+      "prediction": {
+        "homeTeam": "New Zealand",
+        "awayTeam": "Belgium",
+        "homeWin": 0.2219,
+        "draw": 0.2138,
+        "awayWin": 0.5642,
+        "expectedGoals": {
+          "home": 1.2,
+          "away": 2.02
+        },
+        "predictedScore": "1-2",
+        "topScores": [
+          {
+            "score": "1-2",
+            "probability": 0.0978
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0967
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0816
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0807
+          },
+          {
+            "score": "1-3",
+            "probability": 0.066
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "New Zealand",
+        "awayTeam": "Belgium",
+        "homeWin": 0.148,
+        "draw": 0.1742,
+        "awayWin": 0.6778,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GH-01",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-15",
+      "time": "12:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Spain",
+      "awayTeam": "Cape Verde",
+      "city": "Atlanta",
+      "prediction": {
+        "homeTeam": "Spain",
+        "awayTeam": "Cape Verde",
+        "homeWin": 0.8619,
+        "draw": 0.1004,
+        "awayWin": 0.0377,
+        "expectedGoals": {
+          "home": 2.92,
+          "away": 0.48
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.142
+          },
+          {
+            "score": "3-0",
+            "probability": 0.1383
+          },
+          {
+            "score": "4-0",
+            "probability": 0.101
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0972
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0684
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Spain",
+        "awayTeam": "Cape Verde",
+        "homeWin": 0.9384,
+        "draw": 0.0493,
+        "awayWin": 0.0123,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GH-02",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-15",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Saudi Arabia",
+      "awayTeam": "Uruguay",
+      "city": "Miami (Miami Gardens)",
+      "prediction": {
+        "homeTeam": "Saudi Arabia",
+        "awayTeam": "Uruguay",
+        "homeWin": 0.2046,
+        "draw": 0.2201,
+        "awayWin": 0.5753,
+        "expectedGoals": {
+          "home": 1.06,
+          "away": 1.92
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1032
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0993
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0975
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0938
+          },
+          {
+            "score": "1-3",
+            "probability": 0.0637
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Saudi Arabia",
+        "awayTeam": "Uruguay",
+        "homeWin": 0.1407,
+        "draw": 0.1818,
+        "awayWin": 0.6775,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GH-03",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-21",
+      "time": "12:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Spain",
+      "awayTeam": "Saudi Arabia",
+      "city": "Atlanta",
+      "prediction": {
+        "homeTeam": "Spain",
+        "awayTeam": "Saudi Arabia",
+        "homeWin": 0.8482,
+        "draw": 0.1084,
+        "awayWin": 0.0434,
+        "expectedGoals": {
+          "home": 2.84,
+          "away": 0.51
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1409
+          },
+          {
+            "score": "3-0",
+            "probability": 0.1336
+          },
+          {
+            "score": "1-0",
+            "probability": 0.099
+          },
+          {
+            "score": "4-0",
+            "probability": 0.095
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0723
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Spain",
+        "awayTeam": "Saudi Arabia",
+        "homeWin": 0.9308,
+        "draw": 0.0546,
+        "awayWin": 0.0146,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GH-04",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-21",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Cape Verde",
+      "city": "Miami (Miami Gardens)",
+      "prediction": {
+        "homeTeam": "Uruguay",
+        "awayTeam": "Cape Verde",
+        "homeWin": 0.6515,
+        "draw": 0.1956,
+        "awayWin": 0.153,
+        "expectedGoals": {
+          "home": 2.16,
+          "away": 0.94
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1053
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0988
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0978
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0917
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0757
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Uruguay",
+        "awayTeam": "Cape Verde",
+        "homeWin": 0.7459,
+        "draw": 0.1544,
+        "awayWin": 0.0997,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GH-05",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-26",
+      "time": "19:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Cape Verde",
+      "awayTeam": "Saudi Arabia",
+      "city": "Houston",
+      "prediction": {
+        "homeTeam": "Cape Verde",
+        "awayTeam": "Saudi Arabia",
+        "homeWin": 0.3855,
+        "draw": 0.2426,
+        "awayWin": 0.3719,
+        "expectedGoals": {
+          "home": 1.52,
+          "away": 1.49
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1116
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0849
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0831
+          },
+          {
+            "score": "1-0",
+            "probability": 0.075
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0734
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Cape Verde",
+        "awayTeam": "Saudi Arabia",
+        "homeWin": 0.381,
+        "draw": 0.2419,
+        "awayWin": 0.3771,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GH-06",
+      "stage": "小组赛",
+      "group": "H",
+      "date": "2026-06-26",
+      "time": "18:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Spain",
+      "city": "Guadalajara (Zapopan)",
+      "prediction": {
+        "homeTeam": "Uruguay",
+        "awayTeam": "Spain",
+        "homeWin": 0.1753,
+        "draw": 0.2111,
+        "awayWin": 0.6136,
+        "expectedGoals": {
+          "home": 0.96,
+          "away": 2
+        },
+        "predictedScore": "0-1",
+        "topScores": [
+          {
+            "score": "0-1",
+            "probability": 0.1034
+          },
+          {
+            "score": "0-2",
+            "probability": 0.1033
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0996
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0995
+          },
+          {
+            "score": "0-3",
+            "probability": 0.0688
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Uruguay",
+        "awayTeam": "Spain",
+        "homeWin": 0.1092,
+        "draw": 0.1637,
+        "awayWin": 0.7271,
+        "predictedScore": "0-1"
+      }
+    },
+    {
+      "id": "GI-01",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-16",
+      "time": "15:00",
+      "timezone": "UTC-4",
+      "homeTeam": "France",
+      "awayTeam": "Senegal",
+      "city": "New York/New Jersey (East Rutherford)",
+      "prediction": {
+        "homeTeam": "France",
+        "awayTeam": "Senegal",
+        "homeWin": 0.559,
+        "draw": 0.2207,
+        "awayWin": 0.2204,
+        "expectedGoals": {
+          "home": 1.93,
+          "away": 1.13
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1022
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0987
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0903
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0871
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0635
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "France",
+        "awayTeam": "Senegal",
+        "homeWin": 0.6323,
+        "draw": 0.1955,
+        "awayWin": 0.1722,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GI-02",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-16",
+      "time": "18:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Iraq",
+      "awayTeam": "Norway",
+      "city": "Boston (Foxborough)",
+      "prediction": {
+        "homeTeam": "Iraq",
+        "awayTeam": "Norway",
+        "homeWin": 0.1496,
+        "draw": 0.1911,
+        "awayWin": 0.6594,
+        "expectedGoals": {
+          "home": 0.95,
+          "away": 2.21
+        },
+        "predictedScore": "0-2",
+        "topScores": [
+          {
+            "score": "0-2",
+            "probability": 0.1038
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0984
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0939
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0891
+          },
+          {
+            "score": "0-3",
+            "probability": 0.0764
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Iraq",
+        "awayTeam": "Norway",
+        "homeWin": 0.0824,
+        "draw": 0.1366,
+        "awayWin": 0.7809,
+        "predictedScore": "0-2"
+      }
+    },
+    {
+      "id": "GI-03",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-22",
+      "time": "17:00",
+      "timezone": "UTC-4",
+      "homeTeam": "France",
+      "awayTeam": "Iraq",
+      "city": "Philadelphia",
+      "prediction": {
+        "homeTeam": "France",
+        "awayTeam": "Iraq",
+        "homeWin": 0.7847,
+        "draw": 0.1412,
+        "awayWin": 0.0741,
+        "expectedGoals": {
+          "home": 2.58,
+          "away": 0.67
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1292
+          },
+          {
+            "score": "3-0",
+            "probability": 0.1113
+          },
+          {
+            "score": "1-0",
+            "probability": 0.1
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0863
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0743
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "France",
+        "awayTeam": "Iraq",
+        "homeWin": 0.8918,
+        "draw": 0.0793,
+        "awayWin": 0.0289,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GI-04",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-22",
+      "time": "20:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Norway",
+      "awayTeam": "Senegal",
+      "city": "New York/New Jersey (East Rutherford)",
+      "prediction": {
+        "homeTeam": "Norway",
+        "awayTeam": "Senegal",
+        "homeWin": 0.4683,
+        "draw": 0.2324,
+        "awayWin": 0.2994,
+        "expectedGoals": {
+          "home": 1.76,
+          "away": 1.37
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1052
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0928
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0768
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0721
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0678
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Norway",
+        "awayTeam": "Senegal",
+        "homeWin": 0.4824,
+        "draw": 0.2291,
+        "awayWin": 0.2885,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GI-05",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-26",
+      "time": "15:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Norway",
+      "awayTeam": "France",
+      "city": "Boston (Foxborough)",
+      "prediction": {
+        "homeTeam": "Norway",
+        "awayTeam": "France",
+        "homeWin": 0.3186,
+        "draw": 0.238,
+        "awayWin": 0.4434,
+        "expectedGoals": {
+          "home": 1.38,
+          "away": 1.67
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.109
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0911
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0788
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0754
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0658
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Norway",
+        "awayTeam": "France",
+        "homeWin": 0.2693,
+        "draw": 0.2231,
+        "awayWin": 0.5076,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GI-06",
+      "stage": "小组赛",
+      "group": "I",
+      "date": "2026-06-26",
+      "time": "15:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Senegal",
+      "awayTeam": "Iraq",
+      "city": "Toronto",
+      "prediction": {
+        "homeTeam": "Senegal",
+        "awayTeam": "Iraq",
+        "homeWin": 0.6556,
+        "draw": 0.1921,
+        "awayWin": 0.1523,
+        "expectedGoals": {
+          "home": 2.2,
+          "away": 0.96
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1027
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0985
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0932
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0894
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0754
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Senegal",
+        "awayTeam": "Iraq",
+        "homeWin": 0.769,
+        "draw": 0.1421,
+        "awayWin": 0.0889,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GJ-01",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-16",
+      "time": "20:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Argentina",
+      "awayTeam": "Algeria",
+      "city": "Kansas City",
+      "prediction": {
+        "homeTeam": "Argentina",
+        "awayTeam": "Algeria",
+        "homeWin": 0.6177,
+        "draw": 0.2076,
+        "awayWin": 0.1747,
+        "expectedGoals": {
+          "home": 2.04,
+          "away": 0.99
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.101
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0995
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0989
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0974
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0688
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Argentina",
+        "awayTeam": "Algeria",
+        "homeWin": 0.7094,
+        "draw": 0.1702,
+        "awayWin": 0.1204,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GJ-02",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-16",
+      "time": "21:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Austria",
+      "awayTeam": "Jordan",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "prediction": {
+        "homeTeam": "Austria",
+        "awayTeam": "Jordan",
+        "homeWin": 0.5755,
+        "draw": 0.2114,
+        "awayWin": 0.2131,
+        "expectedGoals": {
+          "home": 2.05,
+          "away": 1.17
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0982
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0958
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0837
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0816
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0671
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Austria",
+        "awayTeam": "Jordan",
+        "homeWin": 0.6532,
+        "draw": 0.1844,
+        "awayWin": 0.1623,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GJ-03",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-22",
+      "time": "12:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Argentina",
+      "awayTeam": "Austria",
+      "city": "Dallas (Arlington)",
+      "prediction": {
+        "homeTeam": "Argentina",
+        "awayTeam": "Austria",
+        "homeWin": 0.6612,
+        "draw": 0.1926,
+        "awayWin": 0.1462,
+        "expectedGoals": {
+          "home": 2.18,
+          "away": 0.91
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1077
+          },
+          {
+            "score": "1-0",
+            "probability": 0.099
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0985
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0905
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0781
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Argentina",
+        "awayTeam": "Austria",
+        "homeWin": 0.7628,
+        "draw": 0.147,
+        "awayWin": 0.0902,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GJ-04",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-22",
+      "time": "20:00",
+      "timezone": "UTC-7",
+      "homeTeam": "Jordan",
+      "awayTeam": "Algeria",
+      "city": "San Francisco Bay Area (Santa Clara)",
+      "prediction": {
+        "homeTeam": "Jordan",
+        "awayTeam": "Algeria",
+        "homeWin": 0.2216,
+        "draw": 0.2168,
+        "awayWin": 0.5616,
+        "expectedGoals": {
+          "home": 1.17,
+          "away": 1.98
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.0991
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0983
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0847
+          },
+          {
+            "score": "0-2",
+            "probability": 0.084
+          },
+          {
+            "score": "1-3",
+            "probability": 0.0649
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Jordan",
+        "awayTeam": "Algeria",
+        "homeWin": 0.1561,
+        "draw": 0.182,
+        "awayWin": 0.6619,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GJ-05",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-27",
+      "time": "21:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Algeria",
+      "awayTeam": "Austria",
+      "city": "Kansas City",
+      "prediction": {
+        "homeTeam": "Algeria",
+        "awayTeam": "Austria",
+        "homeWin": 0.4547,
+        "draw": 0.2334,
+        "awayWin": 0.3119,
+        "expectedGoals": {
+          "home": 1.74,
+          "away": 1.4
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1054
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0916
+          },
+          {
+            "score": "1-0",
+            "probability": 0.075
+          },
+          {
+            "score": "1-2",
+            "probability": 0.074
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0652
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Algeria",
+        "awayTeam": "Austria",
+        "homeWin": 0.4793,
+        "draw": 0.2279,
+        "awayWin": 0.2928,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GJ-06",
+      "stage": "小组赛",
+      "group": "J",
+      "date": "2026-06-27",
+      "time": "21:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Jordan",
+      "awayTeam": "Argentina",
+      "city": "Dallas (Arlington)",
+      "prediction": {
+        "homeTeam": "Jordan",
+        "awayTeam": "Argentina",
+        "homeWin": 0.0867,
+        "draw": 0.1565,
+        "awayWin": 0.7568,
+        "expectedGoals": {
+          "home": 0.69,
+          "away": 2.43
+        },
+        "predictedScore": "0-2",
+        "topScores": [
+          {
+            "score": "0-2",
+            "probability": 0.1306
+          },
+          {
+            "score": "0-1",
+            "probability": 0.1077
+          },
+          {
+            "score": "0-3",
+            "probability": 0.1056
+          },
+          {
+            "score": "1-2",
+            "probability": 0.09
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0742
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Jordan",
+        "awayTeam": "Argentina",
+        "homeWin": 0.0359,
+        "draw": 0.0917,
+        "awayWin": 0.8724,
+        "predictedScore": "0-2"
+      }
+    },
+    {
+      "id": "GK-01",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-17",
+      "time": "12:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Portugal",
+      "awayTeam": "DR Congo",
+      "city": "Houston",
+      "prediction": {
+        "homeTeam": "Portugal",
+        "awayTeam": "DR Congo",
+        "homeWin": 0.6348,
+        "draw": 0.1992,
+        "awayWin": 0.166,
+        "expectedGoals": {
+          "home": 2.14,
+          "away": 1
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.0996
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0991
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0931
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0927
+          },
+          {
+            "score": "3-0",
+            "probability": 0.071
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Portugal",
+        "awayTeam": "DR Congo",
+        "homeWin": 0.7358,
+        "draw": 0.157,
+        "awayWin": 0.1073,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GK-02",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-17",
+      "time": "20:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Uzbekistan",
+      "awayTeam": "Colombia",
+      "city": "Mexico City",
+      "prediction": {
+        "homeTeam": "Uzbekistan",
+        "awayTeam": "Colombia",
+        "homeWin": 0.2523,
+        "draw": 0.229,
+        "awayWin": 0.5187,
+        "expectedGoals": {
+          "home": 1.21,
+          "away": 1.83
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1058
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0969
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0873
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0799
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0641
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Uzbekistan",
+        "awayTeam": "Colombia",
+        "homeWin": 0.1997,
+        "draw": 0.2056,
+        "awayWin": 0.5947,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GK-03",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-23",
+      "time": "12:00",
+      "timezone": "UTC-5",
+      "homeTeam": "Portugal",
+      "awayTeam": "Uzbekistan",
+      "city": "Houston",
+      "prediction": {
+        "homeTeam": "Portugal",
+        "awayTeam": "Uzbekistan",
+        "homeWin": 0.5917,
+        "draw": 0.2111,
+        "awayWin": 0.1972,
+        "expectedGoals": {
+          "home": 2.03,
+          "away": 1.09
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0992
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0976
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0912
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0897
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0672
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Portugal",
+        "awayTeam": "Uzbekistan",
+        "homeWin": 0.6736,
+        "draw": 0.1807,
+        "awayWin": 0.1457,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GK-04",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-23",
+      "time": "20:00",
+      "timezone": "UTC-6",
+      "homeTeam": "Colombia",
+      "awayTeam": "DR Congo",
+      "city": "Guadalajara (Zapopan)",
+      "prediction": {
+        "homeTeam": "Colombia",
+        "awayTeam": "DR Congo",
+        "homeWin": 0.6197,
+        "draw": 0.204,
+        "awayWin": 0.1763,
+        "expectedGoals": {
+          "home": 2.1,
+          "away": 1.02
+        },
+        "predictedScore": "2-1",
+        "topScores": [
+          {
+            "score": "2-1",
+            "probability": 0.0993
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0972
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0948
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0927
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0694
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Colombia",
+        "awayTeam": "DR Congo",
+        "homeWin": 0.7133,
+        "draw": 0.1663,
+        "awayWin": 0.1204,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GK-05",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-27",
+      "time": "19:30",
+      "timezone": "UTC-4",
+      "homeTeam": "Colombia",
+      "awayTeam": "Portugal",
+      "city": "Miami (Miami Gardens)",
+      "prediction": {
+        "homeTeam": "Colombia",
+        "awayTeam": "Portugal",
+        "homeWin": 0.3927,
+        "draw": 0.2401,
+        "awayWin": 0.3671,
+        "expectedGoals": {
+          "home": 1.56,
+          "away": 1.5
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1096
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0855
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0823
+          },
+          {
+            "score": "1-0",
+            "probability": 0.073
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0702
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Colombia",
+        "awayTeam": "Portugal",
+        "homeWin": 0.3818,
+        "draw": 0.2384,
+        "awayWin": 0.3797,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GK-06",
+      "stage": "小组赛",
+      "group": "K",
+      "date": "2026-06-27",
+      "time": "19:30",
+      "timezone": "UTC-4",
+      "homeTeam": "DR Congo",
+      "awayTeam": "Uzbekistan",
+      "city": "Atlanta",
+      "prediction": {
+        "homeTeam": "DR Congo",
+        "awayTeam": "Uzbekistan",
+        "homeWin": 0.3627,
+        "draw": 0.243,
+        "awayWin": 0.3943,
+        "expectedGoals": {
+          "home": 1.46,
+          "away": 1.53
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.112
+          },
+          {
+            "score": "1-2",
+            "probability": 0.086
+          },
+          {
+            "score": "2-1",
+            "probability": 0.082
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0766
+          },
+          {
+            "score": "1-0",
+            "probability": 0.073
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "DR Congo",
+        "awayTeam": "Uzbekistan",
+        "homeWin": 0.3366,
+        "draw": 0.2375,
+        "awayWin": 0.426,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GL-01",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-17",
+      "time": "15:00",
+      "timezone": "UTC-5",
+      "homeTeam": "England",
+      "awayTeam": "Croatia",
+      "city": "Dallas (Arlington)",
+      "prediction": {
+        "homeTeam": "England",
+        "awayTeam": "Croatia",
+        "homeWin": 0.5473,
+        "draw": 0.2229,
+        "awayWin": 0.2297,
+        "expectedGoals": {
+          "home": 1.91,
+          "away": 1.16
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1031
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0982
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0889
+          },
+          {
+            "score": "2-0",
+            "probability": 0.0847
+          },
+          {
+            "score": "3-1",
+            "probability": 0.0624
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "England",
+        "awayTeam": "Croatia",
+        "homeWin": 0.6087,
+        "draw": 0.2028,
+        "awayWin": 0.1885,
+        "predictedScore": "2-1"
+      }
+    },
+    {
+      "id": "GL-02",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-17",
+      "time": "19:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Ghana",
+      "awayTeam": "Panama",
+      "city": "Toronto",
+      "prediction": {
+        "homeTeam": "Ghana",
+        "awayTeam": "Panama",
+        "homeWin": 0.2998,
+        "draw": 0.2318,
+        "awayWin": 0.4685,
+        "expectedGoals": {
+          "home": 1.38,
+          "away": 1.77
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1047
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0927
+          },
+          {
+            "score": "0-1",
+            "probability": 0.076
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0721
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0673
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Ghana",
+        "awayTeam": "Panama",
+        "homeWin": 0.2684,
+        "draw": 0.2218,
+        "awayWin": 0.5098,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GL-03",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-23",
+      "time": "16:00",
+      "timezone": "UTC-4",
+      "homeTeam": "England",
+      "awayTeam": "Ghana",
+      "city": "Boston (Foxborough)",
+      "prediction": {
+        "homeTeam": "England",
+        "awayTeam": "Ghana",
+        "homeWin": 0.809,
+        "draw": 0.1285,
+        "awayWin": 0.0625,
+        "expectedGoals": {
+          "home": 2.7,
+          "away": 0.63
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1311
+          },
+          {
+            "score": "3-0",
+            "probability": 0.118
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0971
+          },
+          {
+            "score": "2-1",
+            "probability": 0.082
+          },
+          {
+            "score": "4-0",
+            "probability": 0.0796
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "England",
+        "awayTeam": "Ghana",
+        "homeWin": 0.9002,
+        "draw": 0.0741,
+        "awayWin": 0.0257,
+        "predictedScore": "2-0"
+      }
+    },
+    {
+      "id": "GL-04",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-23",
+      "time": "19:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Panama",
+      "awayTeam": "Croatia",
+      "city": "Toronto",
+      "prediction": {
+        "homeTeam": "Panama",
+        "awayTeam": "Croatia",
+        "homeWin": 0.2469,
+        "draw": 0.222,
+        "awayWin": 0.5311,
+        "expectedGoals": {
+          "home": 1.25,
+          "away": 1.92
+        },
+        "predictedScore": "1-1",
+        "topScores": [
+          {
+            "score": "1-1",
+            "probability": 0.1006
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0968
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0806
+          },
+          {
+            "score": "0-2",
+            "probability": 0.0775
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0628
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Panama",
+        "awayTeam": "Croatia",
+        "homeWin": 0.1786,
+        "draw": 0.1901,
+        "awayWin": 0.6312,
+        "predictedScore": "1-2"
+      }
+    },
+    {
+      "id": "GL-05",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-27",
+      "time": "17:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Panama",
+      "awayTeam": "England",
+      "city": "New York/New Jersey (East Rutherford)",
+      "prediction": {
+        "homeTeam": "Panama",
+        "awayTeam": "England",
+        "homeWin": 0.1435,
+        "draw": 0.1901,
+        "awayWin": 0.6664,
+        "expectedGoals": {
+          "home": 0.91,
+          "away": 2.2
+        },
+        "predictedScore": "0-2",
+        "topScores": [
+          {
+            "score": "0-2",
+            "probability": 0.1075
+          },
+          {
+            "score": "1-2",
+            "probability": 0.0982
+          },
+          {
+            "score": "0-1",
+            "probability": 0.0975
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0891
+          },
+          {
+            "score": "0-3",
+            "probability": 0.0789
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Panama",
+        "awayTeam": "England",
+        "homeWin": 0.0765,
+        "draw": 0.133,
+        "awayWin": 0.7906,
+        "predictedScore": "0-2"
+      }
+    },
+    {
+      "id": "GL-06",
+      "stage": "小组赛",
+      "group": "L",
+      "date": "2026-06-27",
+      "time": "17:00",
+      "timezone": "UTC-4",
+      "homeTeam": "Croatia",
+      "awayTeam": "Ghana",
+      "city": "Philadelphia",
+      "prediction": {
+        "homeTeam": "Croatia",
+        "awayTeam": "Ghana",
+        "homeWin": 0.6986,
+        "draw": 0.1745,
+        "awayWin": 0.127,
+        "expectedGoals": {
+          "home": 2.38,
+          "away": 0.91
+        },
+        "predictedScore": "2-0",
+        "topScores": [
+          {
+            "score": "2-0",
+            "probability": 0.1056
+          },
+          {
+            "score": "2-1",
+            "probability": 0.0961
+          },
+          {
+            "score": "1-0",
+            "probability": 0.0888
+          },
+          {
+            "score": "3-0",
+            "probability": 0.0837
+          },
+          {
+            "score": "1-1",
+            "probability": 0.0808
+          }
+        ]
+      },
+      "gpt55Prediction": {
+        "label": "GPT5.5预测",
+        "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+        "homeTeam": "Croatia",
+        "awayTeam": "Ghana",
+        "homeWin": 0.8005,
+        "draw": 0.1267,
+        "awayWin": 0.0729,
+        "predictedScore": "2-0"
+      }
+    }
+  ],
+  "tournament": [
+    {
+      "team": "Spain",
+      "averageGroupPoints": 7.43,
+      "groupFirst": 0.8013,
+      "groupSecond": 0.1654,
+      "round32": 0.9913,
+      "round16": 0.9126,
+      "quarter": 0.7769,
+      "semi": 0.5935,
+      "final": 0.4122,
+      "champion": 0.2578
+    },
+    {
+      "team": "Argentina",
+      "averageGroupPoints": 6.66,
+      "groupFirst": 0.6806,
+      "groupSecond": 0.2137,
+      "round32": 0.9624,
+      "round16": 0.8468,
+      "quarter": 0.6741,
+      "semi": 0.4838,
+      "final": 0.3108,
+      "champion": 0.175
+    },
+    {
+      "team": "France",
+      "averageGroupPoints": 5.95,
+      "groupFirst": 0.5225,
+      "groupSecond": 0.2914,
+      "round32": 0.9399,
+      "round16": 0.7879,
+      "quarter": 0.5771,
+      "semi": 0.3755,
+      "final": 0.2122,
+      "champion": 0.1065
+    },
+    {
+      "team": "England",
+      "averageGroupPoints": 6.63,
+      "groupFirst": 0.6591,
+      "groupSecond": 0.2384,
+      "round32": 0.9668,
+      "round16": 0.7877,
+      "quarter": 0.5652,
+      "semi": 0.3589,
+      "final": 0.2005,
+      "champion": 0.1
+    },
+    {
+      "team": "Germany",
+      "averageGroupPoints": 5.9,
+      "groupFirst": 0.5153,
+      "groupSecond": 0.2927,
+      "round32": 0.9304,
+      "round16": 0.7156,
+      "quarter": 0.4616,
+      "semi": 0.2605,
+      "final": 0.1198,
+      "champion": 0.0523
+    },
+    {
+      "team": "Brazil",
+      "averageGroupPoints": 5.58,
+      "groupFirst": 0.445,
+      "groupSecond": 0.3334,
+      "round32": 0.9024,
+      "round16": 0.6621,
+      "quarter": 0.4096,
+      "semi": 0.2183,
+      "final": 0.0946,
+      "champion": 0.041
+    },
+    {
+      "team": "Netherlands",
+      "averageGroupPoints": 5.62,
+      "groupFirst": 0.4608,
+      "groupSecond": 0.3203,
+      "round32": 0.8986,
+      "round16": 0.6492,
+      "quarter": 0.4017,
+      "semi": 0.2028,
+      "final": 0.0887,
+      "champion": 0.0366
+    },
+    {
+      "team": "Morocco",
+      "averageGroupPoints": 5.53,
+      "groupFirst": 0.4213,
+      "groupSecond": 0.3439,
+      "round32": 0.8988,
+      "round16": 0.6393,
+      "quarter": 0.3875,
+      "semi": 0.1884,
+      "final": 0.0805,
+      "champion": 0.0355
+    },
+    {
+      "team": "Japan",
+      "averageGroupPoints": 5.39,
+      "groupFirst": 0.3996,
+      "groupSecond": 0.3528,
+      "round32": 0.886,
+      "round16": 0.6031,
+      "quarter": 0.3373,
+      "semi": 0.1544,
+      "final": 0.0641,
+      "champion": 0.029
+    },
+    {
+      "team": "Portugal",
+      "averageGroupPoints": 5.43,
+      "groupFirst": 0.4385,
+      "groupSecond": 0.3188,
+      "round32": 0.8902,
+      "round16": 0.6023,
+      "quarter": 0.3436,
+      "semi": 0.1499,
+      "final": 0.0624,
+      "champion": 0.0267
+    },
+    {
+      "team": "Norway",
+      "averageGroupPoints": 5.01,
+      "groupFirst": 0.2937,
+      "groupSecond": 0.3675,
+      "round32": 0.8587,
+      "round16": 0.5623,
+      "quarter": 0.293,
+      "semi": 0.1302,
+      "final": 0.0536,
+      "champion": 0.0235
+    },
+    {
+      "team": "Colombia",
+      "averageGroupPoints": 5.24,
+      "groupFirst": 0.3923,
+      "groupSecond": 0.3368,
+      "round32": 0.869,
+      "round16": 0.5504,
+      "quarter": 0.2694,
+      "semi": 0.1142,
+      "final": 0.0455,
+      "champion": 0.0197
+    },
+    {
+      "team": "Ecuador",
+      "averageGroupPoints": 5.1,
+      "groupFirst": 0.3282,
+      "groupSecond": 0.3707,
+      "round32": 0.8748,
+      "round16": 0.533,
+      "quarter": 0.2446,
+      "semi": 0.0957,
+      "final": 0.0369,
+      "champion": 0.0142
+    },
+    {
+      "team": "Turkey",
+      "averageGroupPoints": 5.06,
+      "groupFirst": 0.4279,
+      "groupSecond": 0.2566,
+      "round32": 0.8407,
+      "round16": 0.5167,
+      "quarter": 0.2398,
+      "semi": 0.0932,
+      "final": 0.0333,
+      "champion": 0.0129
+    },
+    {
+      "team": "Belgium",
+      "averageGroupPoints": 5.63,
+      "groupFirst": 0.5068,
+      "groupSecond": 0.2711,
+      "round32": 0.8948,
+      "round16": 0.5353,
+      "quarter": 0.2317,
+      "semi": 0.0823,
+      "final": 0.0302,
+      "champion": 0.0115
+    },
+    {
+      "team": "Croatia",
+      "averageGroupPoints": 4.97,
+      "groupFirst": 0.2462,
+      "groupSecond": 0.4404,
+      "round32": 0.8575,
+      "round16": 0.5005,
+      "quarter": 0.2065,
+      "semi": 0.0715,
+      "final": 0.0253,
+      "champion": 0.0106
+    },
+    {
+      "team": "Senegal",
+      "averageGroupPoints": 4.19,
+      "groupFirst": 0.1675,
+      "groupSecond": 0.2791,
+      "round32": 0.746,
+      "round16": 0.4086,
+      "quarter": 0.1644,
+      "semi": 0.0583,
+      "final": 0.0205,
+      "champion": 0.0078
+    },
+    {
+      "team": "Switzerland",
+      "averageGroupPoints": 6.01,
+      "groupFirst": 0.4852,
+      "groupSecond": 0.3518,
+      "round32": 0.9436,
+      "round16": 0.4683,
+      "quarter": 0.168,
+      "semi": 0.0526,
+      "final": 0.0172,
+      "champion": 0.006
+    },
+    {
+      "team": "Uruguay",
+      "averageGroupPoints": 4.83,
+      "groupFirst": 0.1619,
+      "groupSecond": 0.5606,
+      "round32": 0.841,
+      "round16": 0.3946,
+      "quarter": 0.1399,
+      "semi": 0.0428,
+      "final": 0.012,
+      "champion": 0.005
+    },
+    {
+      "team": "Algeria",
+      "averageGroupPoints": 4.23,
+      "groupFirst": 0.1714,
+      "groupSecond": 0.3752,
+      "round32": 0.7447,
+      "round16": 0.3447,
+      "quarter": 0.1299,
+      "semi": 0.0405,
+      "final": 0.0138,
+      "champion": 0.005
+    },
+    {
+      "team": "Australia",
+      "averageGroupPoints": 3.96,
+      "groupFirst": 0.2031,
+      "groupSecond": 0.269,
+      "round32": 0.6799,
+      "round16": 0.2837,
+      "quarter": 0.0964,
+      "semi": 0.0278,
+      "final": 0.0082,
+      "champion": 0.0036
+    },
+    {
+      "team": "Mexico",
+      "averageGroupPoints": 5.1,
+      "groupFirst": 0.3955,
+      "groupSecond": 0.3005,
+      "round32": 0.8497,
+      "round16": 0.3366,
+      "quarter": 0.1062,
+      "semi": 0.0283,
+      "final": 0.0089,
+      "champion": 0.0034
+    },
+    {
+      "team": "South Korea",
+      "averageGroupPoints": 4.77,
+      "groupFirst": 0.3282,
+      "groupSecond": 0.3019,
+      "round32": 0.8223,
+      "round16": 0.3059,
+      "quarter": 0.0897,
+      "semi": 0.024,
+      "final": 0.0069,
+      "champion": 0.0034
+    },
+    {
+      "team": "Iran",
+      "averageGroupPoints": 4.49,
+      "groupFirst": 0.2753,
+      "groupSecond": 0.3166,
+      "round32": 0.7729,
+      "round16": 0.3,
+      "quarter": 0.0949,
+      "semi": 0.0247,
+      "final": 0.0074,
+      "champion": 0.0027
+    },
+    {
+      "team": "Canada",
+      "averageGroupPoints": 5.73,
+      "groupFirst": 0.4175,
+      "groupSecond": 0.3858,
+      "round32": 0.9298,
+      "round16": 0.3297,
+      "quarter": 0.0933,
+      "semi": 0.0259,
+      "final": 0.0075,
+      "champion": 0.0022
+    },
+    {
+      "team": "Paraguay",
+      "averageGroupPoints": 3.64,
+      "groupFirst": 0.1669,
+      "groupSecond": 0.2246,
+      "round32": 0.6114,
+      "round16": 0.2415,
+      "quarter": 0.0711,
+      "semi": 0.0169,
+      "final": 0.0053,
+      "champion": 0.0021
+    },
+    {
+      "team": "Austria",
+      "averageGroupPoints": 3.75,
+      "groupFirst": 0.118,
+      "groupSecond": 0.3001,
+      "round32": 0.6524,
+      "round16": 0.2431,
+      "quarter": 0.0716,
+      "semi": 0.0172,
+      "final": 0.0057,
+      "champion": 0.0015
+    },
+    {
+      "team": "USA",
+      "averageGroupPoints": 3.95,
+      "groupFirst": 0.2021,
+      "groupSecond": 0.2498,
+      "round32": 0.6602,
+      "round16": 0.2194,
+      "quarter": 0.0569,
+      "semi": 0.0134,
+      "final": 0.0037,
+      "champion": 0.0011
+    },
+    {
+      "team": "Uzbekistan",
+      "averageGroupPoints": 3.23,
+      "groupFirst": 0.1054,
+      "groupSecond": 0.1947,
+      "round32": 0.526,
+      "round16": 0.1531,
+      "quarter": 0.0323,
+      "semi": 0.0068,
+      "final": 0.0022,
+      "champion": 0.0009
+    },
+    {
+      "team": "Ivory Coast",
+      "averageGroupPoints": 3.68,
+      "groupFirst": 0.1245,
+      "groupSecond": 0.2444,
+      "round32": 0.6334,
+      "round16": 0.2157,
+      "quarter": 0.0569,
+      "semi": 0.0138,
+      "final": 0.0032,
+      "champion": 0.0008
+    },
+    {
+      "team": "Scotland",
+      "averageGroupPoints": 3.34,
+      "groupFirst": 0.0934,
+      "groupSecond": 0.2071,
+      "round32": 0.5459,
+      "round16": 0.1554,
+      "quarter": 0.0332,
+      "semi": 0.0073,
+      "final": 0.0016,
+      "champion": 0.0003
+    },
+    {
+      "team": "Sweden",
+      "averageGroupPoints": 2.92,
+      "groupFirst": 0.0695,
+      "groupSecond": 0.169,
+      "round32": 0.4562,
+      "round16": 0.1185,
+      "quarter": 0.0197,
+      "semi": 0.0025,
+      "final": 0.0008,
+      "champion": 0.0003
+    },
+    {
+      "team": "Panama",
+      "averageGroupPoints": 3.21,
+      "groupFirst": 0.0763,
+      "groupSecond": 0.2241,
+      "round32": 0.5436,
+      "round16": 0.122,
+      "quarter": 0.0197,
+      "semi": 0.0042,
+      "final": 0.0006,
+      "champion": 0.0003
+    },
+    {
+      "team": "Tunisia",
+      "averageGroupPoints": 2.8,
+      "groupFirst": 0.0701,
+      "groupSecond": 0.1579,
+      "round32": 0.4273,
+      "round16": 0.0905,
+      "quarter": 0.0143,
+      "semi": 0.0021,
+      "final": 0.0005,
+      "champion": 0.0002
+    },
+    {
+      "team": "Egypt",
+      "averageGroupPoints": 3.34,
+      "groupFirst": 0.1189,
+      "groupSecond": 0.2146,
+      "round32": 0.5364,
+      "round16": 0.129,
+      "quarter": 0.0216,
+      "semi": 0.0036,
+      "final": 0.0007,
+      "champion": 0.0002
+    },
+    {
+      "team": "Czech Republic",
+      "averageGroupPoints": 3.98,
+      "groupFirst": 0.1979,
+      "groupSecond": 0.2557,
+      "round32": 0.6822,
+      "round16": 0.1804,
+      "quarter": 0.035,
+      "semi": 0.006,
+      "final": 0.0012,
+      "champion": 0.0001
+    },
+    {
+      "team": "Curaçao",
+      "averageGroupPoints": 2.07,
+      "groupFirst": 0.032,
+      "groupSecond": 0.0922,
+      "round32": 0.2583,
+      "round16": 0.0368,
+      "quarter": 0.0034,
+      "semi": 0.0006,
+      "final": 0.0001,
+      "champion": 0.0001
+    },
+    {
+      "team": "New Zealand",
+      "averageGroupPoints": 3.23,
+      "groupFirst": 0.099,
+      "groupSecond": 0.1977,
+      "round32": 0.4934,
+      "round16": 0.0924,
+      "quarter": 0.0118,
+      "semi": 0.0013,
+      "final": 0.0001,
+      "champion": 0.0001
+    },
+    {
+      "team": "DR Congo",
+      "averageGroupPoints": 2.77,
+      "groupFirst": 0.0638,
+      "groupSecond": 0.1497,
+      "round32": 0.4001,
+      "round16": 0.0906,
+      "quarter": 0.0153,
+      "semi": 0.0023,
+      "final": 0.0007,
+      "champion": 0.0001
+    },
+    {
+      "team": "South Africa",
+      "averageGroupPoints": 2.81,
+      "groupFirst": 0.0784,
+      "groupSecond": 0.1419,
+      "round32": 0.409,
+      "round16": 0.0615,
+      "quarter": 0.0069,
+      "semi": 0.0008,
+      "final": 0.0002,
+      "champion": 0
+    },
+    {
+      "team": "Bosnia & Herzegovina",
+      "averageGroupPoints": 3.26,
+      "groupFirst": 0.0767,
+      "groupSecond": 0.1895,
+      "round32": 0.5571,
+      "round16": 0.0572,
+      "quarter": 0.0047,
+      "semi": 0.0005,
+      "final": 0.0001,
+      "champion": 0
+    },
+    {
+      "team": "Qatar",
+      "averageGroupPoints": 1.84,
+      "groupFirst": 0.0206,
+      "groupSecond": 0.0729,
+      "round32": 0.2089,
+      "round16": 0.0082,
+      "quarter": 0.0006,
+      "semi": 0,
+      "final": 0,
+      "champion": 0
+    },
+    {
+      "team": "Haiti",
+      "averageGroupPoints": 2.3,
+      "groupFirst": 0.0403,
+      "groupSecond": 0.1156,
+      "round32": 0.3088,
+      "round16": 0.0491,
+      "quarter": 0.0055,
+      "semi": 0.0008,
+      "final": 0.0001,
+      "champion": 0
+    },
+    {
+      "team": "Cape Verde",
+      "averageGroupPoints": 2.27,
+      "groupFirst": 0.0166,
+      "groupSecond": 0.1293,
+      "round32": 0.2884,
+      "round16": 0.0265,
+      "quarter": 0.0025,
+      "semi": 0.0001,
+      "final": 0,
+      "champion": 0
+    },
+    {
+      "team": "Saudi Arabia",
+      "averageGroupPoints": 2.4,
+      "groupFirst": 0.0202,
+      "groupSecond": 0.1447,
+      "round32": 0.3218,
+      "round16": 0.0393,
+      "quarter": 0.003,
+      "semi": 0.0003,
+      "final": 0,
+      "champion": 0
+    },
+    {
+      "team": "Iraq",
+      "averageGroupPoints": 1.64,
+      "groupFirst": 0.0163,
+      "groupSecond": 0.062,
+      "round32": 0.1769,
+      "round16": 0.0249,
+      "quarter": 0.0032,
+      "semi": 0.0004,
+      "final": 0.0001,
+      "champion": 0
+    },
+    {
+      "team": "Jordan",
+      "averageGroupPoints": 2.14,
+      "groupFirst": 0.03,
+      "groupSecond": 0.111,
+      "round32": 0.2712,
+      "round16": 0.046,
+      "quarter": 0.0072,
+      "semi": 0.0009,
+      "final": 0.0001,
+      "champion": 0
+    },
+    {
+      "team": "Ghana",
+      "averageGroupPoints": 2.03,
+      "groupFirst": 0.0184,
+      "groupSecond": 0.0971,
+      "round32": 0.2389,
+      "round16": 0.022,
+      "quarter": 0.0013,
+      "semi": 0.0002,
+      "final": 0,
+      "champion": 0
+    }
+  ],
+  "knockoutWindows": {
+    "note": "官方淘汰赛对阵可在赛后替换；当前窗口按小组出线概率和综合强度生成模拟 32 强路径。",
+    "rounds": [
+      {
+        "key": "round32",
+        "name": "32 强",
+        "slots": 16,
+        "matches": [
+          {
+            "id": "R32-01",
+            "seed": "1 v 32",
+            "status": "模拟窗口",
+            "homeTeam": "Spain",
+            "awayTeam": "Bosnia & Herzegovina",
+            "prediction": {
+              "homeTeam": "Spain",
+              "awayTeam": "Bosnia & Herzegovina",
+              "homeWin": 0.854,
+              "draw": 0.104,
+              "awayWin": 0.042,
+              "expectedGoals": {
+                "home": 2.92,
+                "away": 0.52
+              },
+              "predictedScore": "2-0",
+              "topScores": [
+                {
+                  "score": "2-0",
+                  "probability": 0.1362
+                },
+                {
+                  "score": "3-0",
+                  "probability": 0.1326
+                },
+                {
+                  "score": "4-0",
+                  "probability": 0.0968
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0933
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0713
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Spain",
+              "awayTeam": "Bosnia & Herzegovina",
+              "homeWin": 0.9348,
+              "draw": 0.0514,
+              "awayWin": 0.0138,
+              "predictedScore": "2-0"
+            }
+          },
+          {
+            "id": "R32-02",
+            "seed": "2 v 31",
+            "status": "模拟窗口",
+            "homeTeam": "Argentina",
+            "awayTeam": "Czech Republic",
+            "prediction": {
+              "homeTeam": "Argentina",
+              "awayTeam": "Czech Republic",
+              "homeWin": 0.7385,
+              "draw": 0.1618,
+              "awayWin": 0.0997,
+              "expectedGoals": {
+                "home": 2.43,
+                "away": 0.77
+              },
+              "predictedScore": "2-0",
+              "topScores": [
+                {
+                  "score": "2-0",
+                  "probability": 0.1202
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0989
+                },
+                {
+                  "score": "3-0",
+                  "probability": 0.0973
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0927
+                },
+                {
+                  "score": "1-1",
+                  "probability": 0.0764
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Argentina",
+              "awayTeam": "Czech Republic",
+              "homeWin": 0.8423,
+              "draw": 0.1075,
+              "awayWin": 0.0502,
+              "predictedScore": "2-0"
+            }
+          },
+          {
+            "id": "R32-03",
+            "seed": "3 v 30",
+            "status": "模拟窗口",
+            "homeTeam": "France",
+            "awayTeam": "Scotland",
+            "prediction": {
+              "homeTeam": "France",
+              "awayTeam": "Scotland",
+              "homeWin": 0.6856,
+              "draw": 0.1807,
+              "awayWin": 0.1337,
+              "expectedGoals": {
+                "home": 2.31,
+                "away": 0.91
+              },
+              "predictedScore": "2-0",
+              "topScores": [
+                {
+                  "score": "2-0",
+                  "probability": 0.1062
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0971
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.092
+                },
+                {
+                  "score": "1-1",
+                  "probability": 0.0841
+                },
+                {
+                  "score": "3-0",
+                  "probability": 0.0817
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "France",
+              "awayTeam": "Scotland",
+              "homeWin": 0.799,
+              "draw": 0.1278,
+              "awayWin": 0.0731,
+              "predictedScore": "2-0"
+            }
+          },
+          {
+            "id": "R32-04",
+            "seed": "4 v 29",
+            "status": "模拟窗口",
+            "homeTeam": "England",
+            "awayTeam": "Ivory Coast",
+            "prediction": {
+              "homeTeam": "England",
+              "awayTeam": "Ivory Coast",
+              "homeWin": 0.6334,
+              "draw": 0.2016,
+              "awayWin": 0.1649,
+              "expectedGoals": {
+                "home": 2.1,
+                "away": 0.97
+              },
+              "predictedScore": "2-0",
+              "topScores": [
+                {
+                  "score": "2-0",
+                  "probability": 0.1023
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0993
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0974
+                },
+                {
+                  "score": "1-1",
+                  "probability": 0.0944
+                },
+                {
+                  "score": "3-0",
+                  "probability": 0.0717
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "England",
+              "awayTeam": "Ivory Coast",
+              "homeWin": 0.723,
+              "draw": 0.1642,
+              "awayWin": 0.1128,
+              "predictedScore": "2-0"
+            }
+          },
+          {
+            "id": "R32-05",
+            "seed": "5 v 28",
+            "status": "模拟窗口",
+            "homeTeam": "Germany",
+            "awayTeam": "USA",
+            "prediction": {
+              "homeTeam": "Germany",
+              "awayTeam": "USA",
+              "homeWin": 0.5972,
+              "draw": 0.2058,
+              "awayWin": 0.197,
+              "expectedGoals": {
+                "home": 2.11,
+                "away": 1.13
+              },
+              "predictedScore": "2-1",
+              "topScores": [
+                {
+                  "score": "2-1",
+                  "probability": 0.0985
+                },
+                {
+                  "score": "1-1",
+                  "probability": 0.0934
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0871
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0826
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.0692
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Germany",
+              "awayTeam": "USA",
+              "homeWin": 0.6904,
+              "draw": 0.1712,
+              "awayWin": 0.1384,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-06",
+            "seed": "6 v 27",
+            "status": "模拟窗口",
+            "homeTeam": "Brazil",
+            "awayTeam": "Canada",
+            "prediction": {
+              "homeTeam": "Brazil",
+              "awayTeam": "Canada",
+              "homeWin": 0.5483,
+              "draw": 0.2231,
+              "awayWin": 0.2287,
+              "expectedGoals": {
+                "home": 1.9,
+                "away": 1.15
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1033
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0983
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0896
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0852
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.0623
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Brazil",
+              "awayTeam": "Canada",
+              "homeWin": 0.6357,
+              "draw": 0.1935,
+              "awayWin": 0.1708,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-07",
+            "seed": "7 v 26",
+            "status": "模拟窗口",
+            "homeTeam": "Netherlands",
+            "awayTeam": "Austria",
+            "prediction": {
+              "homeTeam": "Netherlands",
+              "awayTeam": "Austria",
+              "homeWin": 0.5439,
+              "draw": 0.219,
+              "awayWin": 0.2371,
+              "expectedGoals": {
+                "home": 1.96,
+                "away": 1.23
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.0991
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0973
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0807
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0791
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.0636
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Netherlands",
+              "awayTeam": "Austria",
+              "homeWin": 0.6197,
+              "draw": 0.1947,
+              "awayWin": 0.1856,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-08",
+            "seed": "8 v 25",
+            "status": "模拟窗口",
+            "homeTeam": "Morocco",
+            "awayTeam": "South Korea",
+            "prediction": {
+              "homeTeam": "Morocco",
+              "awayTeam": "South Korea",
+              "homeWin": 0.5472,
+              "draw": 0.2229,
+              "awayWin": 0.2299,
+              "expectedGoals": {
+                "home": 1.91,
+                "away": 1.16
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.103
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0982
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0887
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0846
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.0624
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Morocco",
+              "awayTeam": "South Korea",
+              "homeWin": 0.615,
+              "draw": 0.2006,
+              "awayWin": 0.1845,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-09",
+            "seed": "9 v 24",
+            "status": "模拟窗口",
+            "homeTeam": "Portugal",
+            "awayTeam": "Iran",
+            "prediction": {
+              "homeTeam": "Portugal",
+              "awayTeam": "Iran",
+              "homeWin": 0.5234,
+              "draw": 0.2251,
+              "awayWin": 0.2516,
+              "expectedGoals": {
+                "home": 1.88,
+                "away": 1.24
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1027
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0967
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0827
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0778
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.0638
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Portugal",
+              "awayTeam": "Iran",
+              "homeWin": 0.5832,
+              "draw": 0.2071,
+              "awayWin": 0.2097,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-10",
+            "seed": "10 v 23",
+            "status": "模拟窗口",
+            "homeTeam": "Japan",
+            "awayTeam": "Mexico",
+            "prediction": {
+              "homeTeam": "Japan",
+              "awayTeam": "Mexico",
+              "homeWin": 0.5418,
+              "draw": 0.2236,
+              "awayWin": 0.2346,
+              "expectedGoals": {
+                "home": 1.9,
+                "away": 1.18
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1031
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0979
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0876
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0832
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.062
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Japan",
+              "awayTeam": "Mexico",
+              "homeWin": 0.5969,
+              "draw": 0.206,
+              "awayWin": 0.1971,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-11",
+            "seed": "11 v 22",
+            "status": "模拟窗口",
+            "homeTeam": "Norway",
+            "awayTeam": "Paraguay",
+            "prediction": {
+              "homeTeam": "Norway",
+              "awayTeam": "Paraguay",
+              "homeWin": 0.5449,
+              "draw": 0.2198,
+              "awayWin": 0.2354,
+              "expectedGoals": {
+                "home": 1.95,
+                "away": 1.21
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0975
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0824
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0804
+                },
+                {
+                  "score": "3-1",
+                  "probability": 0.0634
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Norway",
+              "awayTeam": "Paraguay",
+              "homeWin": 0.6066,
+              "draw": 0.2001,
+              "awayWin": 0.1932,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-12",
+            "seed": "12 v 21",
+            "status": "模拟窗口",
+            "homeTeam": "Colombia",
+            "awayTeam": "Australia",
+            "prediction": {
+              "homeTeam": "Colombia",
+              "awayTeam": "Australia",
+              "homeWin": 0.5012,
+              "draw": 0.23,
+              "awayWin": 0.2688,
+              "expectedGoals": {
+                "home": 1.82,
+                "away": 1.27
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1053
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0956
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0828
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0751
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.067
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Colombia",
+              "awayTeam": "Australia",
+              "homeWin": 0.5479,
+              "draw": 0.217,
+              "awayWin": 0.2351,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-13",
+            "seed": "13 v 20",
+            "status": "模拟窗口",
+            "homeTeam": "Turkey",
+            "awayTeam": "Algeria",
+            "prediction": {
+              "homeTeam": "Turkey",
+              "awayTeam": "Algeria",
+              "homeWin": 0.4523,
+              "draw": 0.2343,
+              "awayWin": 0.3134,
+              "expectedGoals": {
+                "home": 1.72,
+                "away": 1.4
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1061
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0915
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0757
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.0743
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0653
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Turkey",
+              "awayTeam": "Algeria",
+              "homeWin": 0.4837,
+              "draw": 0.2273,
+              "awayWin": 0.2891,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-14",
+            "seed": "14 v 19",
+            "status": "模拟窗口",
+            "homeTeam": "Ecuador",
+            "awayTeam": "Uruguay",
+            "prediction": {
+              "homeTeam": "Ecuador",
+              "awayTeam": "Uruguay",
+              "homeWin": 0.4691,
+              "draw": 0.2424,
+              "awayWin": 0.2885,
+              "expectedGoals": {
+                "home": 1.65,
+                "away": 1.24
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1136
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0938
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0913
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0754
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.0706
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Ecuador",
+              "awayTeam": "Uruguay",
+              "homeWin": 0.4949,
+              "draw": 0.2358,
+              "awayWin": 0.2692,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-15",
+            "seed": "15 v 18",
+            "status": "模拟窗口",
+            "homeTeam": "Belgium",
+            "awayTeam": "Switzerland",
+            "prediction": {
+              "homeTeam": "Belgium",
+              "awayTeam": "Switzerland",
+              "homeWin": 0.4638,
+              "draw": 0.2314,
+              "awayWin": 0.3047,
+              "expectedGoals": {
+                "home": 1.77,
+                "away": 1.4
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1041
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0922
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0744
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.0728
+                },
+                {
+                  "score": "2-0",
+                  "probability": 0.0659
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Belgium",
+              "awayTeam": "Switzerland",
+              "homeWin": 0.4978,
+              "draw": 0.2235,
+              "awayWin": 0.2787,
+              "predictedScore": "2-1"
+            }
+          },
+          {
+            "id": "R32-16",
+            "seed": "16 v 17",
+            "status": "模拟窗口",
+            "homeTeam": "Croatia",
+            "awayTeam": "Senegal",
+            "prediction": {
+              "homeTeam": "Croatia",
+              "awayTeam": "Senegal",
+              "homeWin": 0.4148,
+              "draw": 0.2378,
+              "awayWin": 0.3474,
+              "expectedGoals": {
+                "home": 1.63,
+                "away": 1.47
+              },
+              "predictedScore": "1-1",
+              "topScores": [
+                {
+                  "score": "1-1",
+                  "probability": 0.1079
+                },
+                {
+                  "score": "2-1",
+                  "probability": 0.0879
+                },
+                {
+                  "score": "1-2",
+                  "probability": 0.0795
+                },
+                {
+                  "score": "1-0",
+                  "probability": 0.0733
+                },
+                {
+                  "score": "0-1",
+                  "probability": 0.0663
+                }
+              ]
+            },
+            "gpt55Prediction": {
+              "label": "GPT5.5预测",
+              "basis": "更看重阵容上限、近期状态和大赛底蕴，用于和程序预测做对照。",
+              "homeTeam": "Croatia",
+              "awayTeam": "Senegal",
+              "homeWin": 0.4113,
+              "draw": 0.2374,
+              "awayWin": 0.3513,
+              "predictedScore": "2-1"
+            }
+          }
+        ]
+      },
+      {
+        "key": "round16",
+        "name": "16 强",
+        "slots": 8,
+        "matches": []
+      },
+      {
+        "key": "quarter",
+        "name": "1/4 决赛",
+        "slots": 4,
+        "matches": []
+      },
+      {
+        "key": "semi",
+        "name": "半决赛",
+        "slots": 2,
+        "matches": []
+      },
+      {
+        "key": "final",
+        "name": "决赛",
+        "slots": 1,
+        "matches": []
+      }
+    ]
+  }
+}
