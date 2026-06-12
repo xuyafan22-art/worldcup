@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T02:47:38.439Z",
+  "generatedAt": "2026-06-12T03:34:05.152Z",
   "sources": {
     "cup": "https://raw.githubusercontent.com/openfootball/worldcup/master/2026--usa/cup.txt",
     "results": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
@@ -126,8 +126,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 36,
       "recentGoalsAgainst": 19,
-      "fifaRank": 202,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 16,
+      "fifaRankSource": "elo-estimate",
       "isHost": true
     },
     {
@@ -196,8 +196,8 @@
       "worldCupGames": 3,
       "recentGoalsFor": 30,
       "recentGoalsAgainst": 36,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 43,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -210,8 +210,8 @@
       "worldCupGames": 3,
       "recentGoalsFor": 29,
       "recentGoalsAgainst": 45,
-      "fifaRank": 22,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 48,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -238,8 +238,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 43,
       "recentGoalsAgainst": 22,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 5,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -252,8 +252,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 50,
       "recentGoalsAgainst": 7,
-      "fifaRank": 3,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 13,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -322,8 +322,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 43,
       "recentGoalsAgainst": 17,
-      "fifaRank": 5,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 21,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -336,8 +336,8 @@
       "worldCupGames": 10,
       "recentGoalsFor": 47,
       "recentGoalsAgainst": 29,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 14,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -350,8 +350,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 58,
       "recentGoalsAgainst": 23,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 9,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -378,8 +378,8 @@
       "worldCupGames": 9,
       "recentGoalsFor": 44,
       "recentGoalsAgainst": 12,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 32,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -434,8 +434,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 47,
       "recentGoalsAgainst": 39,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 35,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -448,8 +448,8 @@
       "worldCupGames": 18,
       "recentGoalsFor": 39,
       "recentGoalsAgainst": 24,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 40,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -462,8 +462,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 54,
       "recentGoalsAgainst": 24,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 17,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -476,8 +476,8 @@
       "worldCupGames": 7,
       "recentGoalsFor": 29,
       "recentGoalsAgainst": 17,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 34,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -518,8 +518,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 63,
       "recentGoalsAgainst": 23,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 1,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -560,8 +560,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 23,
       "recentGoalsAgainst": 18,
-      "fifaRank": 3,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 19,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -574,8 +574,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 48,
       "recentGoalsAgainst": 25,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 3,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -588,8 +588,8 @@
       "worldCupGames": 12,
       "recentGoalsFor": 51,
       "recentGoalsAgainst": 15,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 24,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -630,8 +630,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 51,
       "recentGoalsAgainst": 10,
-      "fifaRank": 11,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 2,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -644,8 +644,8 @@
       "worldCupGames": 13,
       "recentGoalsFor": 56,
       "recentGoalsAgainst": 14,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 26,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -686,8 +686,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 51,
       "recentGoalsAgainst": 22,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 8,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -700,8 +700,8 @@
       "worldCupGames": 3,
       "recentGoalsFor": 33,
       "recentGoalsAgainst": 13,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 36,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -742,8 +742,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 53,
       "recentGoalsAgainst": 13,
-      "fifaRank": 5,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 4,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {
@@ -756,8 +756,8 @@
       "worldCupGames": 20,
       "recentGoalsFor": 46,
       "recentGoalsAgainst": 28,
-      "fifaRank": 2,
-      "fifaRankSource": "fifa-page",
+      "fifaRank": 15,
+      "fifaRankSource": "elo-estimate",
       "isHost": false
     },
     {

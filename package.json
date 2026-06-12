@@ -8,8 +8,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "data:update": "node scripts/update-data.js",
+    "players:update": "node scripts/update-players.js",
     "predict": "node scripts/predict.js",
-    "refresh": "npm run data:update && npm run predict"
+    "refresh": "npm run data:update && npm run players:update && npm run predict"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",

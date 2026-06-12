@@ -37,7 +37,8 @@ function makeStrengthModel(teams, playerRatings) {
   const maxRank = Math.max(...teams.map((team) => team.fifaRank ?? teams.length));
 
   return teams.map((team) => {
-    const player = playerRatings.teams?.[team.name]?.score;
+    const playerData = playerRatings.teams?.[team.name];
+    const player = playerData?.score;
     const eloScore = normalize(team.elo, minElo, maxElo);
     const fifaScore = team.fifaRank ? normalize(maxRank + 1 - team.fifaRank, 1, maxRank) : eloScore;
     const playerScore = typeof player === "number" ? clamp(player, 0, 100) : null;
@@ -50,6 +51,14 @@ function makeStrengthModel(teams, playerRatings) {
     return {
       ...team,
       playerScore,
+      playerDataSource: playerRatings.source?.sourceRepo ?? null,
+      playerMarketValue: playerData?.marketValue ?? null,
+      playerTopFiveValue: playerData?.topFiveValue ?? null,
+      playerAverageAge: playerData?.averageAge ?? null,
+      playerSquadSize: playerData?.squadSize ?? 0,
+      playerCaps: playerData?.caps ?? 0,
+      playerGoals: playerData?.goals ?? 0,
+      topPlayers: playerData?.topPlayers ?? [],
       strength: Number(strength.toFixed(2)),
       attack: Number(clamp(0.78 + strength / 92 + team.recentGoalsFor / Math.max(team.recentGames, 1) / 12, 0.65, 2.05).toFixed(3)),
       defense: Number(clamp(1.18 - strength / 145 + team.recentGoalsAgainst / Math.max(team.recentGames, 1) / 18, 0.55, 1.3).toFixed(3)),
@@ -379,6 +388,12 @@ async function main() {
       comparisonName: "GPT5.5预测",
       iterations: 10000,
       scoreMaxGoals: MAX_GOALS,
+    },
+    playerData: {
+      generatedAt: playerRatings.generatedAt ?? null,
+      source: playerRatings.source ?? null,
+      note: playerRatings.note ?? null,
+      missingTeams: playerRatings.missingTeams ?? [],
     },
     groups: data.groups,
     teams: teams.sort((a, b) => b.strength - a.strength),

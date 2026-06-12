@@ -24,6 +24,26 @@ type Team = {
   strength: number;
   attack: number;
   defense: number;
+  playerMarketValue: number | null;
+  playerTopFiveValue: number | null;
+  playerAverageAge: number | null;
+  playerSquadSize: number;
+  playerCaps: number;
+  playerGoals: number;
+  topPlayers: Player[];
+};
+
+type Player = {
+  id: string;
+  name: string;
+  position: string;
+  subPosition: string;
+  club: string;
+  age: number | null;
+  caps: number;
+  goals: number;
+  marketValue: number;
+  imageUrl: string;
 };
 
 type MatchPrediction = {
@@ -91,6 +111,12 @@ type PredictionPayload = {
     iterations: number;
     scoreMaxGoals: number;
   };
+  playerData: {
+    generatedAt: string | null;
+    source: { sourceRepo?: string; players?: string; nationalTeams?: string } | null;
+    note: string | null;
+    missingTeams: string[];
+  };
   groups: Group[];
   teams: Team[];
   matches: Match[];
@@ -157,6 +183,11 @@ const teamZh: Record<string, string> = {
 const displayTeam = (name: string) => teamZh[name] ?? name;
 
 const percent = (value: number) => `${(value * 100).toFixed(value >= 0.1 ? 1 : 2)}%`;
+const money = (value: number | null) => {
+  if (!value) return "暂无";
+  if (value >= 100000000) return `€${(value / 100000000).toFixed(2)}亿`;
+  return `€${(value / 10000).toFixed(0)}万`;
+};
 const fmtDate = (value: string) =>
   new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit" }).format(new Date(`${value}T12:00:00Z`));
 
@@ -307,6 +338,7 @@ function App() {
         <div className="meta">
           <span>程序模型：Elo + 近况 + Poisson</span>
           <span>对照：GPT5.5预测</span>
+          <span>球员源：Transfermarkt</span>
           <span>模拟：{data.model.iterations.toLocaleString("zh-CN")} 次</span>
           <span>更新：{new Date(data.generatedAt).toLocaleString("zh-CN")}</span>
         </div>
@@ -332,6 +364,11 @@ function App() {
           <span>球队池</span>
           <strong>{data.teams.length}</strong>
           <small>含东道主修正</small>
+        </article>
+        <article>
+          <span>球员数据</span>
+          <strong>{data.playerData.missingTeams.length ? `${data.playerData.missingTeams.length}缺` : "完整"}</strong>
+          <small>{data.playerData.generatedAt ? new Date(data.playerData.generatedAt).toLocaleDateString("zh-CN") : "未生成"}</small>
         </article>
       </section>
 
@@ -496,7 +533,16 @@ function App() {
                 <div className="metric"><span>强度</span><b>{team.strength.toFixed(1)}</b></div>
                 <div className="metric"><span>32 强</span><b>{percent(forecast?.round32 ?? 0)}</b></div>
                 <div className="metric"><span>夺冠</span><b>{percent(forecast?.champion ?? 0)}</b></div>
-                <div className="metric"><span>球员</span><b>{team.playerScore ?? "未填"}</b></div>
+                <div className="metric"><span>球员</span><b>{team.playerScore?.toFixed(1) ?? "暂无"}</b></div>
+                <div className="metric"><span>身价</span><b>{money(team.playerMarketValue)}</b></div>
+                <div className="metric"><span>均龄</span><b>{team.playerAverageAge ?? "暂无"}</b></div>
+                <div className="player-list">
+                  {team.topPlayers.slice(0, 5).map((player) => (
+                    <span key={player.id}>
+                      {player.name} · {player.subPosition || player.position} · {money(player.marketValue)}
+                    </span>
+                  ))}
+                </div>
               </article>
             );
           })}
