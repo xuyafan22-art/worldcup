@@ -154,6 +154,7 @@ type LiveApiGame = {
 
 type LiveMatch = {
   id: string;
+  dateKey: string;
   dateTime: string;
   homeTeam: string;
   awayTeam: string;
@@ -265,10 +266,21 @@ const money = (value: number | null) => {
   if (value >= 100000000) return `€${(value / 100000000).toFixed(2)}亿`;
   return `€${(value / 10000).toFixed(0)}万`;
 };
-const fmtDate = (value: string) =>
-  new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit" }).format(new Date(`${value}T12:00:00Z`));
 const fmtDateTime = (date: Date) =>
-  new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(date);
+  new Intl.DateTimeFormat("zh-CN", {
+    timeZone: "Asia/Shanghai",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(date);
+
+function parseTimezoneOffset(timezone: string) {
+  const match = timezone.match(/^UTC([+-])(\d{1,2})$/);
+  if (!match) return 0;
+  return (match[1] === "+" ? 1 : -1) * Number(match[2]);
+}
 
 function normalizeApiTeam(name?: string) {
   if (!name || name === "undefined") return "";
@@ -284,9 +296,16 @@ function parseLocalDate(value: string) {
 
 function parseStaticDate(match: Match) {
   const [hour, minute] = match.time.split(":").map(Number);
-  const date = new Date(`${match.date}T00:00:00`);
-  date.setHours(hour || 0, minute || 0, 0, 0);
-  return date;
+  const [year, month, day] = match.date.split("-").map(Number);
+  const offset = parseTimezoneOffset(match.timezone);
+  return new Date(Date.UTC(year, month - 1, day, (hour || 0) - offset, minute || 0, 0, 0));
+}
+
+function localDateKey(value: string) {
+  const match = value.match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+  if (!match) return value.slice(0, 10);
+  const [, month, day, year] = match;
+  return `${year}-${month}-${day}`;
 }
 
 function matchKey(date: string, homeTeam: string, awayTeam: string) {
@@ -315,6 +334,7 @@ function toLiveMatch(game: LiveApiGame): LiveMatch | null {
   const date = parseLocalDate(game.local_date);
   return {
     id: game.id,
+    dateKey: localDateKey(game.local_date),
     dateTime: date.toISOString(),
     homeTeam,
     awayTeam,
@@ -501,9 +521,9 @@ function MatchCard({ match, compact = false }: { match: Match | KnockoutMatch; c
     <article className={compact ? "match-card match-card--compact" : "match-card"}>
       <div className="match-head">
         <span>
-          {"group" in match ? `Group ${match.group} · ${fmtDate(match.date)} ${match.time} ${match.timezone}` : `${match.status} · ${match.seed}`}
+          {"group" in match ? `Group ${match.group} · 北京时间 ${fmtDateTime(parseStaticDate(match))}` : `${match.status} · ${match.seed}`}
         </span>
-        <strong>{"city" in match ? match.city : "淘汰赛窗口"}</strong>
+        <strong>{"city" in match ? `${match.city} · 当地 ${match.time} ${match.timezone}` : "淘汰赛窗口"}</strong>
       </div>
       <div className="teams-line">
         <b>{displayTeam(match.homeTeam)}</b>
@@ -632,8 +652,7 @@ function App() {
   const liveByKey = useMemo(() => {
     const map = new Map<string, LiveMatch>();
     liveMatches.forEach((match) => {
-      const date = match.dateTime.slice(0, 10);
-      map.set(matchKey(date, match.homeTeam, match.awayTeam), match);
+      map.set(matchKey(match.dateKey, match.homeTeam, match.awayTeam), match);
     });
     return map;
   }, [liveMatches]);
