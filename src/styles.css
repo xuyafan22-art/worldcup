@@ -124,7 +124,7 @@ h2 {
 
 .tabs {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 8px;
   margin: 18px 0;
 }
@@ -182,13 +182,17 @@ h2 {
 
 .champion-list,
 .comparison-list,
+.recent-grid,
 .match-list,
+.timeline-list,
 .team-table {
   display: grid;
   gap: 10px;
 }
 
 .rank-row,
+.recent-card,
+.timeline-card,
 .team-card,
 .match-card,
 .team-detail {
@@ -313,6 +317,108 @@ th {
 
 .match-card {
   padding: 14px;
+}
+
+.recent-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.recent-card {
+  padding: 14px;
+}
+
+.live-score {
+  display: grid;
+  grid-template-columns: 1fr 86px 1fr;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 8px;
+  font-size: 17px;
+}
+
+.live-score span {
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 8px;
+  background: #135847;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 850;
+}
+
+.live-score b:last-child {
+  text-align: right;
+}
+
+.live-source {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #dfd6c2;
+  border-radius: 8px;
+  background: #fff8e8;
+  color: #664b1f;
+}
+
+.timeline-list {
+  position: relative;
+}
+
+.timeline-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 14px;
+  padding: 14px;
+}
+
+.timeline-card--near {
+  border-color: #cf6f3f;
+  box-shadow: 0 0 0 2px rgba(207, 111, 63, 0.14);
+}
+
+.timeline-time {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  color: #25352e;
+}
+
+.timeline-body {
+  display: grid;
+  gap: 10px;
+}
+
+.status-pill {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 24px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.status-pill--finished {
+  background: #e4f0e8;
+  color: #135847;
+}
+
+.status-pill--live {
+  background: #fff0dc;
+  color: #8f4f0e;
+}
+
+.status-pill--upcoming {
+  background: #edf2ed;
+  color: #52615a;
+}
+
+.live-reason {
+  color: #66736d;
 }
 
 .match-card--compact .prob-grid {
@@ -490,6 +596,7 @@ th {
   }
 
   .layout--overview,
+  .recent-grid,
   .match-list,
   .team-table {
     grid-template-columns: 1fr;
@@ -531,10 +638,14 @@ th {
   }
 
   .rank-row,
+  .live-score,
+  .timeline-card,
   .teams-line {
     grid-template-columns: 1fr;
   }
 
+  .live-score b,
+  .live-score b:last-child,
   .teams-line b,
   .teams-line b:last-child {
     text-align: center;
