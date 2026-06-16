@@ -9,8 +9,9 @@
     "preview": "vite preview --host 0.0.0.0",
     "data:update": "node scripts/update-data.js",
     "players:update": "node scripts/update-players.js",
+    "live:update": "node scripts/update-live-results.js",
     "predict": "node scripts/predict.js",
-    "refresh": "npm run data:update && npm run players:update && npm run predict"
+    "refresh": "npm run data:update && npm run players:update && npm run predict && npm run live:update"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",

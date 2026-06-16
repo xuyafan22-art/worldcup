@@ -152,6 +152,12 @@ type LiveApiGame = {
   away_team_name_en?: string;
 };
 
+type LiveGamesPayload = {
+  games?: LiveApiGame[];
+  generatedAt?: string;
+  source?: string;
+};
+
 type LiveMatch = {
   id: string;
   dateKey: string;
@@ -611,6 +617,7 @@ function App() {
   const [data, setData] = useState<PredictionPayload | null>(null);
   const [liveMatches, setLiveMatches] = useState<LiveMatch[]>([]);
   const [liveUpdatedAt, setLiveUpdatedAt] = useState<string | null>(null);
+  const [liveMode, setLiveMode] = useState<"live" | "snapshot" | "none">("none");
   const [liveError, setLiveError] = useState("");
   const [tab, setTab] = useState<Tab>("overview");
   const [query, setQuery] = useState("");
@@ -629,20 +636,37 @@ function App() {
   }, []);
 
   useEffect(() => {
+    const parseLivePayload = (payload: LiveGamesPayload, mode: "live" | "snapshot") => {
+      const parsed = (payload.games ?? []).map(toLiveMatch).filter((match): match is LiveMatch => Boolean(match));
+      setLiveMatches(parsed);
+      setLiveUpdatedAt(payload.generatedAt ?? new Date().toISOString());
+      setLiveMode(mode);
+    };
+
     fetch(LIVE_SCORE_URL)
       .then((response) => {
         if (!response.ok) throw new Error("实时比分源暂时不可用");
         return response.json();
       })
-      .then((payload: { games?: LiveApiGame[] }) => {
-        const parsed = (payload.games ?? []).map(toLiveMatch).filter((match): match is LiveMatch => Boolean(match));
-        setLiveMatches(parsed);
-        setLiveUpdatedAt(new Date().toISOString());
+      .then((payload: LiveGamesPayload) => {
+        parseLivePayload(payload, "live");
         setLiveError("");
       })
       .catch((err: Error) => {
-        setLiveError(err.message);
-        setLiveMatches([]);
+        fetch(`${import.meta.env.BASE_URL}live-games.json`)
+          .then((response) => {
+            if (!response.ok) throw err;
+            return response.json();
+          })
+          .then((payload: LiveGamesPayload) => {
+            parseLivePayload(payload, "snapshot");
+            setLiveError(`实时源不可用，已使用快照：${err.message}`);
+          })
+          .catch(() => {
+            setLiveError(err.message);
+            setLiveMode("none");
+            setLiveMatches([]);
+          });
       });
   }, []);
 
@@ -745,7 +769,7 @@ function App() {
           <span>程序模型：Elo + 近况 + Poisson</span>
           <span>对照：GPT5.5预测</span>
           <span>球员源：Transfermarkt</span>
-          <span>实时比分：{liveError ? "回退静态" : liveUpdatedAt ? "已接入" : "连接中"}</span>
+          <span>实时比分：{liveMode === "live" ? "已接入" : liveMode === "snapshot" ? "快照兜底" : liveError ? "回退静态" : "连接中"}</span>
           <span>模拟：{data.model.iterations.toLocaleString("zh-CN")} 次</span>
         </div>
       </section>
@@ -759,7 +783,7 @@ function App() {
         <article>
           <span>已完赛</span>
           <strong>{finishedMatches.length}</strong>
-          <small>{liveUpdatedAt ? `比分更新 ${new Date(liveUpdatedAt).toLocaleTimeString("zh-CN")}` : LIVE_SOURCE_LABEL}</small>
+          <small>{liveUpdatedAt ? `比分更新 ${new Date(liveUpdatedAt).toLocaleString("zh-CN")}` : LIVE_SOURCE_LABEL}</small>
         </article>
         <article>
           <span>赛程样本</span>
@@ -916,7 +940,7 @@ function App() {
         <section className="layout">
           <div className="live-source">
             <strong>{LIVE_SOURCE_LABEL}</strong>
-            <span>{liveError ? `实时拉取失败，当前使用静态预测：${liveError}` : `已完赛 ${finishedMatches.length} 场，未来比赛已按近期状态动态修正。`}</span>
+            <span>{liveError ? liveError : `已完赛 ${finishedMatches.length} 场，未来比赛已按近期状态动态修正。`}</span>
           </div>
           <div className="recent-grid">
             {recentMatches.map((match) => <RecentMatchCard match={match} key={match.id} />)}
